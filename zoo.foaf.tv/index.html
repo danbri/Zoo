@@ -29,6 +29,8 @@
     geonames, geo or foaf:based_near. That would be a much larger project.
     </p>
 	
+	<p>RDFa 1.1 parsers that can handle this include: <a href="http://lists.w3.org/Archives/Public/public-rdfa-wg/2010May/0051.html">RdfContext</a> (a href="http://github.com/gkellogg/rdf_context">github</a>) and <a href="http://www.w3.org/2007/08/pyRdfa/Shadow.html">pyRDFa</a>.</p>
+	
 	<ol>
 		<li>We begin with <a href="http://dublincore.org/documents/dcmi-terms/">Dublin Core</a> (dcterms:) and all the non-archaic FOAF terms, to describe people, groups and organizations and the things they make and do.</li>
 		<li>We add the Organization vocabulary, which expands on FOAF to model organizational structures more explicitly.</li>
@@ -79,6 +81,11 @@
 <!-- ... -->
 <h2>FOAF</h2>
 <li><div typeof="rdfa:TermMapping"><span class="term" property="rdfa:term">made</span> (<span property="rdfa:uri">http://xmlns.com/foaf/0.1/made</span>)</div></li>
+<li><div typeof="rdfa:TermMapping"><span class="term" property="rdfa:term">name</span> (<span property="rdfa:uri">http://xmlns.com/foaf/0.1/name</span>)</div></li>
+<li><div typeof="rdfa:TermMapping"><span class="term" property="rdfa:term">Person</span> (<span property="rdfa:uri">http://xmlns.com/foaf/0.1/Person</span>)</div></li>
+
+<h2>FOAF</h2>
+<li><div typeof="rdfa:TermMapping"><span class="term" property="rdfa:term">Book</span> (<span property="rdfa:uri">http://purl.org/ontology/bibo/Book</span>)</div></li>
 
 </ul>
 
