@@ -1,299 +1,299 @@
-http://purl.org/ontology/bibo/	bibo	volume
-http://purl.org/ontology/bibo/	bibo	argued
-http://purl.org/ontology/bibo/	bibo	edition
-http://purl.org/ontology/bibo/	bibo	pages
-http://purl.org/ontology/bibo/	bibo	suffixName
-http://purl.org/ontology/bibo/	bibo	number
-http://purl.org/ontology/bibo/	bibo	numVolumes
-http://purl.org/ontology/bibo/	bibo	pageEnd
-http://purl.org/ontology/bibo/	bibo	shortTitle
-http://purl.org/ontology/bibo/	bibo	issue
-http://purl.org/ontology/bibo/	bibo	numPages
-http://purl.org/ontology/bibo/	bibo	content
-http://purl.org/ontology/bibo/	bibo	abstract
-http://purl.org/ontology/bibo/	bibo	pageStart
-http://purl.org/ontology/bibo/	bibo	section
-http://purl.org/ontology/bibo/	bibo	chapter
-http://purl.org/ontology/bibo/	bibo	locator
-http://purl.org/ontology/bibo/	bibo	uri
-http://purl.org/ontology/bibo/	bibo	prefixName
-http://purl.org/ontology/bibo/	bibo	transcriptOf
-http://purl.org/ontology/bibo/	bibo	status
-http://purl.org/ontology/bibo/	bibo	cites
-http://purl.org/ontology/bibo/	bibo	translationOf
-http://purl.org/ontology/bibo/	bibo	recipient
-http://purl.org/ontology/bibo/	bibo	court
-http://purl.org/ontology/bibo/	bibo	owner
-http://purl.org/ontology/bibo/	bibo	producer
-http://purl.org/ontology/bibo/	bibo	interviewer
-http://purl.org/ontology/bibo/	bibo	editor
-http://purl.org/ontology/bibo/	bibo	presentedAt
-http://purl.org/ontology/bibo/	bibo	organizer
-http://purl.org/ontology/bibo/	bibo	annotates
-http://purl.org/ontology/bibo/	bibo	reviewOf
-http://purl.org/ontology/bibo/	bibo	presents
-http://purl.org/ontology/bibo/	bibo	distributor
-http://purl.org/ontology/bibo/	bibo	performer
-http://purl.org/ontology/bibo/	bibo	translator
-http://purl.org/ontology/bibo/	bibo	degree
-http://purl.org/ontology/bibo/	bibo	issuer
-http://purl.org/ontology/bibo/	bibo	editorList
-http://purl.org/ontology/bibo/	bibo	authorList
-http://purl.org/ontology/bibo/	bibo	citedBy
-http://purl.org/ontology/bibo/	bibo	contributorList
-http://purl.org/ontology/bibo/	bibo	interviewee
-http://purl.org/ontology/bibo/	bibo	director
-http://purl.org/ontology/bibo/	bibo	Patent
-http://purl.org/ontology/bibo/	bibo	PersonalCommunicationDocument
-http://purl.org/ontology/bibo/	bibo	Workshop
-http://purl.org/ontology/bibo/	bibo	Interview
-http://purl.org/ontology/bibo/	bibo	Thesis
-http://purl.org/ontology/bibo/	bibo	EditedBook
-http://purl.org/ontology/bibo/	bibo	LegalDocument
-http://purl.org/ontology/bibo/	bibo	AcademicArticle
-http://purl.org/ontology/bibo/	bibo	Note
-http://purl.org/ontology/bibo/	bibo	DocumentPart
-http://purl.org/ontology/bibo/	bibo	Series
-http://purl.org/ontology/bibo/	bibo	Periodical
-http://purl.org/ontology/bibo/	bibo	PersonalCommunication
-http://purl.org/ontology/bibo/	bibo	AudioDocument
-http://purl.org/ontology/bibo/	bibo	Newspaper
-http://purl.org/ontology/bibo/	bibo	LegalDecision
-http://purl.org/ontology/bibo/	bibo	Issue
-http://purl.org/ontology/bibo/	bibo	Performance
-http://purl.org/ontology/bibo/	bibo	MultiVolumeBook
-http://purl.org/ontology/bibo/	bibo	Webpage
-http://purl.org/ontology/bibo/	bibo	Brief
-http://purl.org/ontology/bibo/	bibo	Website
-http://purl.org/ontology/bibo/	bibo	Quote
-http://purl.org/ontology/bibo/	bibo	Film
-http://purl.org/ontology/bibo/	bibo	AudioVisualDocument
-http://purl.org/ontology/bibo/	bibo	CollectedDocument
-http://purl.org/ontology/bibo/	bibo	Document
-http://purl.org/ontology/bibo/	bibo	Manual
-http://purl.org/ontology/bibo/	bibo	Slide
-http://purl.org/ontology/bibo/	bibo	Bill
-http://purl.org/ontology/bibo/	bibo	DocumentStatus
-http://purl.org/ontology/bibo/	bibo	Hearing
-http://purl.org/ontology/bibo/	bibo	Manuscript
-http://purl.org/ontology/bibo/	bibo	Journal
-http://purl.org/ontology/bibo/	bibo	Slideshow
-http://purl.org/ontology/bibo/	bibo	Statute
-http://purl.org/ontology/bibo/	bibo	Report
-http://purl.org/ontology/bibo/	bibo	Article
-http://purl.org/ontology/bibo/	bibo	ReferenceSource
-http://purl.org/ontology/bibo/	bibo	ThesisDegree
-http://purl.org/ontology/bibo/	bibo	Magazine
-http://purl.org/ontology/bibo/	bibo	Collection
-http://purl.org/ontology/bibo/	bibo	Conference
-http://purl.org/ontology/bibo/	bibo	Email
-http://purl.org/ontology/bibo/	bibo	Excerpt
-http://purl.org/ontology/bibo/	bibo	Book
-http://purl.org/ontology/bibo/	bibo	Standard
-http://purl.org/ontology/bibo/	bibo	Proceedings
-http://purl.org/ontology/bibo/	bibo	Image
-http://purl.org/ontology/bibo/	bibo	Chapter
-http://purl.org/ontology/bibo/	bibo	LegalCaseDocument
-http://purl.org/ontology/bibo/	bibo	BookSection
-http://purl.org/ontology/bibo/	bibo	Code
-http://purl.org/ontology/bibo/	bibo	Letter
-http://purl.org/ontology/bibo/	bibo	CourtReporter
-http://purl.org/ontology/bibo/	bibo	Legislation
-http://purl.org/ontology/bibo/	bibo	Map
-http://purl.org/vocab/bio/0.1/	bio	principal
-http://purl.org/vocab/bio/0.1/	bio	immediatelyFollowingEvent
-http://purl.org/vocab/bio/0.1/	bio	immediatelyPrecedingEvent
-http://purl.org/vocab/bio/0.1/	bio	concludingEvent
-http://purl.org/vocab/bio/0.1/	bio	officiator
-http://purl.org/vocab/bio/0.1/	bio	olb
-http://purl.org/vocab/bio/0.1/	bio	state
-http://purl.org/vocab/bio/0.1/	bio	employer
-http://purl.org/vocab/bio/0.1/	bio	parent
-http://purl.org/vocab/bio/0.1/	bio	mother
-http://purl.org/vocab/bio/0.1/	bio	keywords
-http://purl.org/vocab/bio/0.1/	bio	eventInterval
-http://purl.org/vocab/bio/0.1/	bio	organization
-http://purl.org/vocab/bio/0.1/	bio	father
-http://purl.org/vocab/bio/0.1/	bio	biography
-http://purl.org/vocab/bio/0.1/	bio	child
-http://purl.org/vocab/bio/0.1/	bio	place
-http://purl.org/vocab/bio/0.1/	bio	witness
-http://purl.org/vocab/bio/0.1/	bio	spectator
-http://purl.org/vocab/bio/0.1/	bio	position
-http://purl.org/vocab/bio/0.1/	bio	followingEvent
-http://purl.org/vocab/bio/0.1/	bio	initiatingEvent
-http://purl.org/vocab/bio/0.1/	bio	date
-http://purl.org/vocab/bio/0.1/	bio	precedingEvent
-http://purl.org/vocab/bio/0.1/	bio	concurrentEvent
-http://purl.org/vocab/bio/0.1/	bio	partner
-http://purl.org/vocab/bio/0.1/	bio	agent
-http://purl.org/vocab/bio/0.1/	bio	event
-http://purl.org/vocab/bio/0.1/	bio	Promotion
-http://purl.org/vocab/bio/0.1/	bio	Employment
-http://purl.org/vocab/bio/0.1/	bio	Resignation
-http://purl.org/vocab/bio/0.1/	bio	Execution
-http://purl.org/vocab/bio/0.1/	bio	Murder
-http://purl.org/vocab/bio/0.1/	bio	Adoption
-http://purl.org/vocab/bio/0.1/	bio	Graduation
-http://purl.org/vocab/bio/0.1/	bio	Retirement
-http://purl.org/vocab/bio/0.1/	bio	PositionChange
-http://purl.org/vocab/bio/0.1/	bio	Inauguration
-http://purl.org/vocab/bio/0.1/	bio	Dismissal
-http://purl.org/vocab/bio/0.1/	bio	Accession
-http://purl.org/vocab/bio/0.1/	bio	Assassination
-http://purl.org/vocab/bio/0.1/	bio	Marriage
-http://purl.org/vocab/bio/0.1/	bio	Divorce
-http://purl.org/vocab/bio/0.1/	bio	Ordination
-http://purl.org/vocab/bio/0.1/	bio	Funeral
-http://purl.org/vocab/bio/0.1/	bio	Imprisonment
-http://purl.org/vocab/bio/0.1/	bio	BasMitzvah
-http://purl.org/vocab/bio/0.1/	bio	Event
-http://purl.org/vocab/bio/0.1/	bio	Emigration
-http://purl.org/vocab/bio/0.1/	bio	Burial
-http://purl.org/vocab/bio/0.1/	bio	Investiture
-http://purl.org/vocab/bio/0.1/	bio	Enrolment
-http://purl.org/vocab/bio/0.1/	bio	Baptism
-http://purl.org/vocab/bio/0.1/	bio	Demotion
-http://purl.org/vocab/bio/0.1/	bio	Redundancy
-http://purl.org/vocab/bio/0.1/	bio	IndividualEvent
-http://purl.org/vocab/bio/0.1/	bio	Coronation
-http://purl.org/vocab/bio/0.1/	bio	Birth
-http://purl.org/vocab/bio/0.1/	bio	BarMitzvah
-http://purl.org/vocab/bio/0.1/	bio	Death
-http://purl.org/vocab/bio/0.1/	bio	Naturalization
-http://purl.org/vocab/bio/0.1/	bio	GroupEvent
-http://purl.org/vocab/bio/0.1/	bio	NameChange
-http://purl.org/vocab/bio/0.1/	bio	Interval
-http://purl.org/vocab/bio/0.1/	bio	Annulment
-http://purl.org/vocab/bio/0.1/	bio	Cremation
-http://creativecommons.org/ns#	cc	jurisdiction
-http://creativecommons.org/ns#	cc	prohibits
-http://creativecommons.org/ns#	cc	deprecatedOn
-http://creativecommons.org/ns#	cc	requires
-http://creativecommons.org/ns#	cc	permits
-http://creativecommons.org/ns#	cc	license
-http://creativecommons.org/ns#	cc	Requirement
-http://creativecommons.org/ns#	cc	Jurisdiction
-http://creativecommons.org/ns#	cc	Prohibition
-http://creativecommons.org/ns#	cc	Permission
-http://creativecommons.org/ns#	cc	License
-http://creativecommons.org/ns#	cc	Work
-http://commontag.org/ns#	ctag	tagged
-http://commontag.org/ns#	ctag	means
-http://commontag.org/ns#	ctag	taggingDate
-http://commontag.org/ns#	ctag	label
-http://commontag.org/ns#	ctag	isAbout
-http://commontag.org/ns#	ctag	TaggedContent
-http://commontag.org/ns#	ctag	Tag
-http://commontag.org/ns#	ctag	AuthorTag
-http://commontag.org/ns#	ctag	ReaderTag
-http://commontag.org/ns#	ctag	AutoTag
-http://purl.org/dc/terms/	dcterms	spatial
-http://purl.org/dc/terms/	dcterms	publisher
-http://purl.org/dc/terms/	dcterms	license
-http://purl.org/dc/terms/	dcterms	tableOfContents
-http://purl.org/dc/terms/	dcterms	accrualMethod
-http://purl.org/dc/terms/	dcterms	language
-http://purl.org/dc/terms/	dcterms	isPartOf
-http://purl.org/dc/terms/	dcterms	conformsTo
-http://purl.org/dc/terms/	dcterms	hasFormat
-http://purl.org/dc/terms/	dcterms	hasVersion
-http://purl.org/dc/terms/	dcterms	identifier
-http://purl.org/dc/terms/	dcterms	mediator
-http://purl.org/dc/terms/	dcterms	modified
-http://purl.org/dc/terms/	dcterms	hasPart
-http://purl.org/dc/terms/	dcterms	medium
-http://purl.org/dc/terms/	dcterms	available
-http://purl.org/dc/terms/	dcterms	alternative
-http://purl.org/dc/terms/	dcterms	references
-http://purl.org/dc/terms/	dcterms	date
-http://purl.org/dc/terms/	dcterms	accrualPolicy
-http://purl.org/dc/terms/	dcterms	educationLevel
-http://purl.org/dc/terms/	dcterms	isRequiredBy
-http://purl.org/dc/terms/	dcterms	coverage
-http://purl.org/dc/terms/	dcterms	source
-http://purl.org/dc/terms/	dcterms	audience
-http://purl.org/dc/terms/	dcterms	rightsHolder
-http://purl.org/dc/terms/	dcterms	provenance
-http://purl.org/dc/terms/	dcterms	requires
-http://purl.org/dc/terms/	dcterms	dateAccepted
-http://purl.org/dc/terms/	dcterms	instructionalMethod
-http://purl.org/dc/terms/	dcterms	description
-http://purl.org/dc/terms/	dcterms	abstract
-http://purl.org/dc/terms/	dcterms	isFormatOf
-http://purl.org/dc/terms/	dcterms	valid
-http://purl.org/dc/terms/	dcterms	type
-http://purl.org/dc/terms/	dcterms	bibliographicCitation
-http://purl.org/dc/terms/	dcterms	rights
-http://purl.org/dc/terms/	dcterms	accrualPeriodicity
-http://purl.org/dc/terms/	dcterms	issued
-http://purl.org/dc/terms/	dcterms	creator
-http://purl.org/dc/terms/	dcterms	isReferencedBy
-http://purl.org/dc/terms/	dcterms	dateSubmitted
-http://purl.org/dc/terms/	dcterms	extent
-http://purl.org/dc/terms/	dcterms	temporal
-http://purl.org/dc/terms/	dcterms	title
-http://purl.org/dc/terms/	dcterms	contributor
-http://purl.org/dc/terms/	dcterms	format
-http://purl.org/dc/terms/	dcterms	isVersionOf
-http://purl.org/dc/terms/	dcterms	accessRights
-http://purl.org/dc/terms/	dcterms	subject
-http://purl.org/dc/terms/	dcterms	created
-http://purl.org/dc/terms/	dcterms	isReplacedBy
-http://purl.org/dc/terms/	dcterms	dateCopyrighted
-http://purl.org/dc/terms/	dcterms	replaces
-http://purl.org/dc/terms/	dcterms	relation
-http://purl.org/dc/terms/	dcterms	MethodOfInstruction
-http://purl.org/dc/terms/	dcterms	MediaTypeOrExtent
-http://purl.org/dc/terms/	dcterms	Jurisdiction
-http://purl.org/dc/terms/	dcterms	PhysicalResource
-http://purl.org/dc/terms/	dcterms	Location
-http://purl.org/dc/terms/	dcterms	FileFormat
-http://purl.org/dc/terms/	dcterms	Frequency
-http://purl.org/dc/terms/	dcterms	LinguisticSystem
-http://purl.org/dc/terms/	dcterms	AgentClass
-http://purl.org/dc/terms/	dcterms	LocationPeriodOrJurisdiction
-http://purl.org/dc/terms/	dcterms	PeriodOfTime
-http://purl.org/dc/terms/	dcterms	Policy
-http://purl.org/dc/terms/	dcterms	MethodOfAccrual
-http://purl.org/dc/terms/	dcterms	ProvenanceStatement
-http://purl.org/dc/terms/	dcterms	PhysicalMedium
-http://purl.org/dc/terms/	dcterms	RightsStatement
-http://purl.org/dc/terms/	dcterms	LicenseDocument
-http://purl.org/dc/terms/	dcterms	Standard
-http://purl.org/dc/terms/	dcterms	Agent
-http://purl.org/dc/terms/	dcterms	MediaType
-http://purl.org/dc/terms/	dcterms	SizeOrDuration
-http://purl.org/dc/terms/	dcterms	BibliographicResource
-http://usefulinc.com/ns/doap#	doap	bug-database
-http://usefulinc.com/ns/doap#	doap	release
-http://usefulinc.com/ns/doap#	doap	screenshots
-http://usefulinc.com/ns/doap#	doap	translator
-http://usefulinc.com/ns/doap#	doap	developer
-http://usefulinc.com/ns/doap#	doap	name
-http://usefulinc.com/ns/doap#	doap	repository
-http://usefulinc.com/ns/doap#	doap	os
-http://usefulinc.com/ns/doap#	doap	old-homepage
-http://usefulinc.com/ns/doap#	doap	module
-http://usefulinc.com/ns/doap#	doap	shortdesc
-http://usefulinc.com/ns/doap#	doap	wiki
-http://usefulinc.com/ns/doap#	doap	revision
-http://usefulinc.com/ns/doap#	doap	download-page
-http://usefulinc.com/ns/doap#	doap	helper
-http://usefulinc.com/ns/doap#	doap	location
-http://usefulinc.com/ns/doap#	doap	vendor
-http://usefulinc.com/ns/doap#	doap	documenter
-http://usefulinc.com/ns/doap#	doap	browse
-http://usefulinc.com/ns/doap#	doap	tester
-http://usefulinc.com/ns/doap#	doap	language
-http://usefulinc.com/ns/doap#	doap	anon-root
-http://usefulinc.com/ns/doap#	doap	download-mirror
-http://usefulinc.com/ns/doap#	doap	implements
-http://usefulinc.com/ns/doap#	doap	created
-http://usefulinc.com/ns/doap#	doap	homepage
-http://usefulinc.com/ns/doap#	doap	file-release
-http://usefulinc.com/ns/doap#	doap	mailing-list
-http://usefulinc.com/ns/doap#	doap	audience
+http://purl.org/ontology/bibo/	bibo	volume	p,zoo
+http://purl.org/ontology/bibo/	bibo	argued	p,zoo
+http://purl.org/ontology/bibo/	bibo	edition	p,zoo
+http://purl.org/ontology/bibo/	bibo	pages	p,zoo
+http://purl.org/ontology/bibo/	bibo	suffixName	p,todo
+http://purl.org/ontology/bibo/	bibo	number	p,zoo
+http://purl.org/ontology/bibo/	bibo	numVolumes	p,zoo
+http://purl.org/ontology/bibo/	bibo	pageEnd	p,zoo
+http://purl.org/ontology/bibo/	bibo	shortTitle	p,zoo
+http://purl.org/ontology/bibo/	bibo	issue	p,zoo
+http://purl.org/ontology/bibo/	bibo	numPages	p,zoo
+http://purl.org/ontology/bibo/	bibo	content	p,zoo
+http://purl.org/ontology/bibo/	bibo	abstract	p,zoo
+http://purl.org/ontology/bibo/	bibo	pageStart	p,zoo
+http://purl.org/ontology/bibo/	bibo	section	p,zoo
+http://purl.org/ontology/bibo/	bibo	chapter	p,zoo
+http://purl.org/ontology/bibo/	bibo	locator	p,zoo
+http://purl.org/ontology/bibo/	bibo	uri	p,todo
+http://purl.org/ontology/bibo/	bibo	prefixName	p,todo
+http://purl.org/ontology/bibo/	bibo	transcriptOf	p,todo
+http://purl.org/ontology/bibo/	bibo	status	p,todo
+http://purl.org/ontology/bibo/	bibo	cites	p,zoo
+http://purl.org/ontology/bibo/	bibo	translationOf	p,zoo
+http://purl.org/ontology/bibo/	bibo	recipient	p,zoo
+http://purl.org/ontology/bibo/	bibo	court	p,zoo
+http://purl.org/ontology/bibo/	bibo	owner	p,zoo
+http://purl.org/ontology/bibo/	bibo	producer	p,zoo
+http://purl.org/ontology/bibo/	bibo	interviewer	p,zoo
+http://purl.org/ontology/bibo/	bibo	editor	p,zoo
+http://purl.org/ontology/bibo/	bibo	presentedAt	p,zoo
+http://purl.org/ontology/bibo/	bibo	organizer	p,zoo
+http://purl.org/ontology/bibo/	bibo	annotates	p,zoo
+http://purl.org/ontology/bibo/	bibo	reviewOf	p,zoo
+http://purl.org/ontology/bibo/	bibo	presents	p,zoo
+http://purl.org/ontology/bibo/	bibo	distributor	p,zoo
+http://purl.org/ontology/bibo/	bibo	performer	p,zoo
+http://purl.org/ontology/bibo/	bibo	translator	p,zoo
+http://purl.org/ontology/bibo/	bibo	degree	p,zoo
+http://purl.org/ontology/bibo/	bibo	issuer	p,zoo
+http://purl.org/ontology/bibo/	bibo	editorList	p,zoo
+http://purl.org/ontology/bibo/	bibo	authorList	p,zoo
+http://purl.org/ontology/bibo/	bibo	citedBy	p,zoo
+http://purl.org/ontology/bibo/	bibo	contributorList	p,zoo
+http://purl.org/ontology/bibo/	bibo	interviewee	p,zoo
+http://purl.org/ontology/bibo/	bibo	director	p,zoo
+http://purl.org/ontology/bibo/	bibo	Patent	c,zoo
+http://purl.org/ontology/bibo/	bibo	PersonalCommunicationDocument	c,zoo
+http://purl.org/ontology/bibo/	bibo	Workshop	c,zoo
+http://purl.org/ontology/bibo/	bibo	Interview	c,zoo
+http://purl.org/ontology/bibo/	bibo	Thesis	c,zoo
+http://purl.org/ontology/bibo/	bibo	EditedBook	c,zoo
+http://purl.org/ontology/bibo/	bibo	LegalDocument	c,zoo
+http://purl.org/ontology/bibo/	bibo	AcademicArticle	c,zoo
+http://purl.org/ontology/bibo/	bibo	Note	c,zoo
+http://purl.org/ontology/bibo/	bibo	DocumentPart	c,zoo
+http://purl.org/ontology/bibo/	bibo	Series	c,zoo
+http://purl.org/ontology/bibo/	bibo	Periodical	c,zoo
+http://purl.org/ontology/bibo/	bibo	PersonalCommunication	c,zoo
+http://purl.org/ontology/bibo/	bibo	AudioDocument	c,zoo
+http://purl.org/ontology/bibo/	bibo	Newspaper	c,zoo
+http://purl.org/ontology/bibo/	bibo	LegalDecision	c,zoo
+http://purl.org/ontology/bibo/	bibo	Issue	c,zoo
+http://purl.org/ontology/bibo/	bibo	Performance	c,zoo
+http://purl.org/ontology/bibo/	bibo	MultiVolumeBook	c,zoo
+http://purl.org/ontology/bibo/	bibo	Webpage	c,zoo
+http://purl.org/ontology/bibo/	bibo	Brief	c,zoo
+http://purl.org/ontology/bibo/	bibo	Website	c,zoo
+http://purl.org/ontology/bibo/	bibo	Quote	c,zoo
+http://purl.org/ontology/bibo/	bibo	Film	c,zoo
+http://purl.org/ontology/bibo/	bibo	AudioVisualDocument	c,zoo
+http://purl.org/ontology/bibo/	bibo	CollectedDocument	c,zoo
+http://purl.org/ontology/bibo/	bibo	Document	c,zoo
+http://purl.org/ontology/bibo/	bibo	Manual	c,zoo
+http://purl.org/ontology/bibo/	bibo	Slide	c,zoo
+http://purl.org/ontology/bibo/	bibo	Bill	c,zoo
+http://purl.org/ontology/bibo/	bibo	DocumentStatus	c,zoo
+http://purl.org/ontology/bibo/	bibo	Hearing	c,zoo
+http://purl.org/ontology/bibo/	bibo	Manuscript	c,zoo
+http://purl.org/ontology/bibo/	bibo	Journal	c,zoo
+http://purl.org/ontology/bibo/	bibo	Slideshow	c,zoo
+http://purl.org/ontology/bibo/	bibo	Statute	c,zoo
+http://purl.org/ontology/bibo/	bibo	Report	c,zoo
+http://purl.org/ontology/bibo/	bibo	Article	c,zoo
+http://purl.org/ontology/bibo/	bibo	ReferenceSource	c,zoo
+http://purl.org/ontology/bibo/	bibo	ThesisDegree	c,zoo
+http://purl.org/ontology/bibo/	bibo	Magazine	c,zoo
+http://purl.org/ontology/bibo/	bibo	Collection	c,zoo	Clashes with SKOS, but we default to bibo here.
+http://purl.org/ontology/bibo/	bibo	Conference	c,zoo
+http://purl.org/ontology/bibo/	bibo	Email	c,zoo
+http://purl.org/ontology/bibo/	bibo	Excerpt	c,zoo
+http://purl.org/ontology/bibo/	bibo	Book	c,zoo
+http://purl.org/ontology/bibo/	bibo	Standard	c,zoo	Not sure about this one.
+http://purl.org/ontology/bibo/	bibo	Proceedings	c,zoo
+http://purl.org/ontology/bibo/	bibo	Image	c,zoo
+http://purl.org/ontology/bibo/	bibo	Chapter	c,zoo
+http://purl.org/ontology/bibo/	bibo	LegalCaseDocument	c,zoo
+http://purl.org/ontology/bibo/	bibo	BookSection	c,zoo
+http://purl.org/ontology/bibo/	bibo	Code	c,TODO Clashes with something...
+http://purl.org/ontology/bibo/	bibo	Letter	c,zoo
+http://purl.org/ontology/bibo/	bibo	CourtReporter	c,zoo
+http://purl.org/ontology/bibo/	bibo	Legislation	c,zoo
+http://purl.org/ontology/bibo/	bibo	Map	c,zoo	Check Geonames.
+http://purl.org/vocab/bio/0.1/	bio	principal	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	immediatelyFollowingEvent	p,zoo
+http://purl.org/vocab/bio/0.1/	bio	immediatelyPrecedingEvent	p,zoo
+http://purl.org/vocab/bio/0.1/	bio	concludingEvent	p,zoo
+http://purl.org/vocab/bio/0.1/	bio	officiator	p,zoo
+http://purl.org/vocab/bio/0.1/	bio	olb	p,zoo
+http://purl.org/vocab/bio/0.1/	bio	state	p,zoo
+http://purl.org/vocab/bio/0.1/	bio	employer	p,zoo
+http://purl.org/vocab/bio/0.1/	bio	parent	p,zoo
+http://purl.org/vocab/bio/0.1/	bio	mother	p,zoo
+http://purl.org/vocab/bio/0.1/	bio	keywords	p,zoo
+http://purl.org/vocab/bio/0.1/	bio	eventInterval	p,zoo
+http://purl.org/vocab/bio/0.1/	bio	organization	p,zoo
+http://purl.org/vocab/bio/0.1/	bio	father	p,zoo
+http://purl.org/vocab/bio/0.1/	bio	biography	p,zoo
+http://purl.org/vocab/bio/0.1/	bio	child	p,zoo
+http://purl.org/vocab/bio/0.1/	bio	place	p,zoo
+http://purl.org/vocab/bio/0.1/	bio	witness	p,zoo
+http://purl.org/vocab/bio/0.1/	bio	spectator	p,zoo
+http://purl.org/vocab/bio/0.1/	bio	position	p,zoo
+http://purl.org/vocab/bio/0.1/	bio	followingEvent	p,zoo
+http://purl.org/vocab/bio/0.1/	bio	initiatingEvent	p,zoo
+http://purl.org/vocab/bio/0.1/	bio	date	p,zoo
+http://purl.org/vocab/bio/0.1/	bio	precedingEvent	p,zoo
+http://purl.org/vocab/bio/0.1/	bio	concurrentEvent	p,zoo
+http://purl.org/vocab/bio/0.1/	bio	partner	p,zoo
+http://purl.org/vocab/bio/0.1/	bio	agent	p,zoo
+http://purl.org/vocab/bio/0.1/	bio	event	p,zoo
+http://purl.org/vocab/bio/0.1/	bio	Promotion	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	Employment	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	Resignation	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	Execution	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	Murder	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	Adoption	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	Graduation	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	Retirement	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	PositionChange	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	Inauguration	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	Dismissal	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	Accession	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	Assassination	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	Marriage	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	Divorce	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	Ordination	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	Funeral	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	Imprisonment	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	BasMitzvah	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	Event	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	Emigration	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	Burial	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	Investiture	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	Enrolment	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	Baptism	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	Demotion	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	Redundancy	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	IndividualEvent	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	Coronation	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	Birth	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	BarMitzvah	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	Death	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	Naturalization	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	GroupEvent	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	NameChange	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	Interval	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	Annulment	c,zoo
+http://purl.org/vocab/bio/0.1/	bio	Cremation	c,zoo
+http://creativecommons.org/ns#	cc	jurisdiction	p,zoo
+http://creativecommons.org/ns#	cc	prohibits	p,zoo
+http://creativecommons.org/ns#	cc	deprecatedOn	p,zoo
+http://creativecommons.org/ns#	cc	requires	p,zoo
+http://creativecommons.org/ns#	cc	permits	p,zoo
+http://creativecommons.org/ns#	cc	license	p,zoo
+http://creativecommons.org/ns#	cc	Requirement	c,zoo
+http://creativecommons.org/ns#	cc	Jurisdiction	c,zoo
+http://creativecommons.org/ns#	cc	Prohibition	c,zoo
+http://creativecommons.org/ns#	cc	Permission	c,zoo
+http://creativecommons.org/ns#	cc	License	c,zoo
+http://creativecommons.org/ns#	cc	Work	c,zoo	Overlaps?
+http://commontag.org/ns#	ctag	tagged	p,zoo
+http://commontag.org/ns#	ctag	means	p,zoo
+http://commontag.org/ns#	ctag	taggingDate	p,zoo
+http://commontag.org/ns#	ctag	label	p,TODO CLash with rdfs:label
+http://commontag.org/ns#	ctag	isAbout	p,zoo
+http://commontag.org/ns#	ctag	TaggedContent	c,zoo
+http://commontag.org/ns#	ctag	Tag	c,zoo
+http://commontag.org/ns#	ctag	AuthorTag	c,zoo
+http://commontag.org/ns#	ctag	ReaderTag	c,zoo
+http://commontag.org/ns#	ctag	AutoTag	c,zoo
+http://purl.org/dc/terms/	dcterms	spatial	p,zoo
+http://purl.org/dc/terms/	dcterms	publisher	p,zoo
+http://purl.org/dc/terms/	dcterms	license	p,zoo
+http://purl.org/dc/terms/	dcterms	tableOfContents	p,zoo
+http://purl.org/dc/terms/	dcterms	accrualMethod	p,zoo
+http://purl.org/dc/terms/	dcterms	language	p,zoo
+http://purl.org/dc/terms/	dcterms	isPartOf	p,zoo
+http://purl.org/dc/terms/	dcterms	conformsTo	p,zoo
+http://purl.org/dc/terms/	dcterms	hasFormat	p,zoo
+http://purl.org/dc/terms/	dcterms	hasVersion	p,zoo
+http://purl.org/dc/terms/	dcterms	identifier	p,zoo
+http://purl.org/dc/terms/	dcterms	mediator	p,zoo
+http://purl.org/dc/terms/	dcterms	modified	p,zoo
+http://purl.org/dc/terms/	dcterms	hasPart	p,zoo
+http://purl.org/dc/terms/	dcterms	medium	p,zoo
+http://purl.org/dc/terms/	dcterms	available	p,zoo
+http://purl.org/dc/terms/	dcterms	alternative	p,zoo
+http://purl.org/dc/terms/	dcterms	references	p,zoo
+http://purl.org/dc/terms/	dcterms	date	p,zoo
+http://purl.org/dc/terms/	dcterms	accrualPolicy	p,zoo
+http://purl.org/dc/terms/	dcterms	educationLevel	p,zoo
+http://purl.org/dc/terms/	dcterms	isRequiredBy	p,zoo
+http://purl.org/dc/terms/	dcterms	coverage	p,zoo
+http://purl.org/dc/terms/	dcterms	source	p,zoo
+http://purl.org/dc/terms/	dcterms	audience	p,zoo
+http://purl.org/dc/terms/	dcterms	rightsHolder	p,zoo
+http://purl.org/dc/terms/	dcterms	provenance	p,zoo
+http://purl.org/dc/terms/	dcterms	requires	p,zoo
+http://purl.org/dc/terms/	dcterms	dateAccepted	p,zoo
+http://purl.org/dc/terms/	dcterms	instructionalMethod	p,zoo
+http://purl.org/dc/terms/	dcterms	description	p,zoo
+http://purl.org/dc/terms/	dcterms	abstract	p,zoo
+http://purl.org/dc/terms/	dcterms	isFormatOf	p,zoo
+http://purl.org/dc/terms/	dcterms	valid	p,zoo
+http://purl.org/dc/terms/	dcterms	type	p,TODO CLASH with rdf:type
+http://purl.org/dc/terms/	dcterms	bibliographicCitation	p,zoo
+http://purl.org/dc/terms/	dcterms	rights	p,zoo
+http://purl.org/dc/terms/	dcterms	accrualPeriodicity	p,zoo
+http://purl.org/dc/terms/	dcterms	issued	p,zoo
+http://purl.org/dc/terms/	dcterms	creator	p,zoo
+http://purl.org/dc/terms/	dcterms	isReferencedBy	p,zoo
+http://purl.org/dc/terms/	dcterms	dateSubmitted	p,zoo
+http://purl.org/dc/terms/	dcterms	extent	p,zoo
+http://purl.org/dc/terms/	dcterms	temporal	p,zoo
+http://purl.org/dc/terms/	dcterms	title	p,zoo
+http://purl.org/dc/terms/	dcterms	contributor	p,zoo
+http://purl.org/dc/terms/	dcterms	format	p,zoo
+http://purl.org/dc/terms/	dcterms	isVersionOf	p,zoo
+http://purl.org/dc/terms/	dcterms	accessRights	p,zoo
+http://purl.org/dc/terms/	dcterms	subject	p,zoo
+http://purl.org/dc/terms/	dcterms	created	p,zoo
+http://purl.org/dc/terms/	dcterms	isReplacedBy	p,zoo
+http://purl.org/dc/terms/	dcterms	dateCopyrighted	p,zoo
+http://purl.org/dc/terms/	dcterms	replaces	p,zoo
+http://purl.org/dc/terms/	dcterms	relation	p,zoo
+http://purl.org/dc/terms/	dcterms	MethodOfInstruction	c,zoo
+http://purl.org/dc/terms/	dcterms	MediaTypeOrExtent	c,zoo
+http://purl.org/dc/terms/	dcterms	Jurisdiction	c,zoo
+http://purl.org/dc/terms/	dcterms	PhysicalResource	c,zoo
+http://purl.org/dc/terms/	dcterms	Location	c,zoo
+http://purl.org/dc/terms/	dcterms	FileFormat	c,zoo
+http://purl.org/dc/terms/	dcterms	Frequency	c,zoo
+http://purl.org/dc/terms/	dcterms	LinguisticSystem	c,zoo
+http://purl.org/dc/terms/	dcterms	AgentClass	c,zoo	Not sure if this is used/useful, esp. if using foaf's Agent.
+http://purl.org/dc/terms/	dcterms	LocationPeriodOrJurisdiction	c,zoo
+http://purl.org/dc/terms/	dcterms	PeriodOfTime	c,zoo
+http://purl.org/dc/terms/	dcterms	Policy	c,zoo
+http://purl.org/dc/terms/	dcterms	MethodOfAccrual	c,zoo
+http://purl.org/dc/terms/	dcterms	ProvenanceStatement	c,zoo
+http://purl.org/dc/terms/	dcterms	PhysicalMedium	c,zoo
+http://purl.org/dc/terms/	dcterms	RightsStatement	c,zoo
+http://purl.org/dc/terms/	dcterms	LicenseDocument	c,zoo
+http://purl.org/dc/terms/	dcterms	Standard	c,todo	What is this? See also bibo.
+http://purl.org/dc/terms/	dcterms	Agent	c,defers	Defers to foaf:Agent
+http://purl.org/dc/terms/	dcterms	MediaType	c,zoo
+http://purl.org/dc/terms/	dcterms	SizeOrDuration	c,zoo
+http://purl.org/dc/terms/	dcterms	BibliographicResource	c,zoo
+http://usefulinc.com/ns/doap#	doap	bug-database	p,zoo
+http://usefulinc.com/ns/doap#	doap	release	p,zoo
+http://usefulinc.com/ns/doap#	doap	screenshots	p,zoo
+http://usefulinc.com/ns/doap#	doap	translator	p,zoo
+http://usefulinc.com/ns/doap#	doap	developer	p,zoo
+http://usefulinc.com/ns/doap#	doap	name	p,defers Defaulting to foaf:name
+http://usefulinc.com/ns/doap#	doap	repository	p,zoo
+http://usefulinc.com/ns/doap#	doap	os	p,zoo
+http://usefulinc.com/ns/doap#	doap	old-homepage	p,zoo
+http://usefulinc.com/ns/doap#	doap	module	p,zoo
+http://usefulinc.com/ns/doap#	doap	shortdesc	p,zoo
+http://usefulinc.com/ns/doap#	doap	wiki	p,zoo
+http://usefulinc.com/ns/doap#	doap	revision	p,zoo
+http://usefulinc.com/ns/doap#	doap	download-page	p,zoo
+http://usefulinc.com/ns/doap#	doap	helper	p,zoo
+http://usefulinc.com/ns/doap#	doap	location	p,zoo	Check for similar.
+http://usefulinc.com/ns/doap#	doap	vendor	p,zoo
+http://usefulinc.com/ns/doap#	doap	documenter	p,zoo
+http://usefulinc.com/ns/doap#	doap	browse	p,zoo
+http://usefulinc.com/ns/doap#	doap	tester	p,zoo
+http://usefulinc.com/ns/doap#	doap	language	p,defer	Defer to dc:language?
+http://usefulinc.com/ns/doap#	doap	anon-root	p,zoo
+http://usefulinc.com/ns/doap#	doap	download-mirror	p,zoo
+http://usefulinc.com/ns/doap#	doap	implements	p,zoo
+http://usefulinc.com/ns/doap#	doap	created	p,zoo
+http://usefulinc.com/ns/doap#	doap	homepage	p,defer	Defer to foaf:homepage
+http://usefulinc.com/ns/doap#	doap	file-release	p,zoo
+http://usefulinc.com/ns/doap#	doap	mailing-list	p,zoo
+http://usefulinc.com/ns/doap#	doap	audience	p,defer Defer to dc:audience
 http://usefulinc.com/ns/doap#	doap	service-endpoint
 http://usefulinc.com/ns/doap#	doap	programming-language
 http://usefulinc.com/ns/doap#	doap	blog
