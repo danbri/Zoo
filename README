@@ -1,0 +1,28 @@
+This is a filetree to support the experimental Zoo RDFa profile.
+
+Zoo is a collection of wild RDF vocabularies, with minimal integration such
+that they can be deployed as a single RDFa profile.
+
+The main activity here is investigating the cases where the exact same 
+term name has been used in different vocabularies. At this stage no other
+form of integration has been explored.
+
+Contents: 
+
+Software: some Perl scripts and CPAN libraries, also use is made of 
+Redland/Raptor for double-checking parser results.
+
+* master.txt - hand-maintained list of vocabularies, prefixes, and tags.
+* 'harvest.pl' script, which fetches RDF from vocabs tagged 'zoo' in master.txt.
+* 'terms' script, reads master.txt and data/*.rdf, generates raw_manifest.txt
+* raw_manifest.txt - list of terms and clashes
+* curated_manifest.txt - with extra tags indicating selections for Zoo
+
+zoo.foaf.tv/ 
+  ... corresponds to the Web site. Will be largely script generated.
+
+Todo: we have everything almost that is needed, except final generation of index.html.
+
+--
+
+Contact: Dan Brickley <danbri@danbri.org>
