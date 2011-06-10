@@ -4,9 +4,8 @@ swan? http://www.w3.org/TR/hcls-swan/
 
 livejournal foaf
 
-earl, other w3c ones?
+earl, other w3c ones? powder isdescribedby
 wordnet?
 cito http://www.jbiomedsem.com/content/1/S1/S6
-
 
 
