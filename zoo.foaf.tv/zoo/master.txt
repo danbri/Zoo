@@ -1,0 +1,40 @@
+#prefix	uri	tags	comments
+bibo	http://purl.org/ontology/bibo/	zoo	Collection clashes with skos:, but ok.
+bio	http://purl.org/vocab/bio/0.1/	zoo	Extends FOAF.
+cc	http://creativecommons.org/ns#	zoo,rdfa	Note, the schema is in RDFa so needs hand conversion.
+cert	http://www.w3.org/ns/auth/cert#	zoo	Used for WebID / FOAF+SSL protocol.
+cito	http://purl.org/net/cito/	zoo	Citation ontology for Oxford. TODO: compare/contrast with SWAN.
+ctag	http://commontag.org/ns#	zoo	A tagging ontology.
+dbo	http://dbpedia.org/ontology/	todo	DBpedia ontology. Didn't find RDF at namespace. Very big. Can we take top pieces, schema.org-ish level?
+dbprop	http://dbpedia.org/property/	todo	ditto re dbpedia.
+dcterms	http://purl.org/dc/terms/	zoo	Dublin Core's modern vocab. Used in favour of 1.1. Some terms mapped w/ FOAF.
+doap	http://usefulinc.com/ns/doap#	zoo	Edd Dumbill's FOAF extensions for describing projects, mostly opensource ones. Quite well used, within that niche.
+ev	http://purl.org/NET/c4dm/event.owl#	zoo	An events ontology; one of several, but this one used by BBC Programmes Ontology.
+foaf	http://xmlns.com/foaf/0.1/	zoo	The original RDFWeb utility vocabulary. Ignore terms tagged with 'archaic'.
+frbr	http://purl.org/vocab/frbr/core#	todo	Not sure if this is good to deploy; check what's happening with library RDA vocabs, which do same stuff. Ask Ian.
+freebase	http://rdf.freebase.com/ns/	todo	Freebase's namespace. Very big dataset. Not clear what if any general pieces to include. See also dbpedia.
+geo	http://www.w3.org/2003/01/geo/wgs84_pos#	zoo	Tiny W3C SWIG namespace for wgs84 lat/long points. Fairly well used, if basic.
+geonames	http://www.geonames.org/ontology#	zoo	Widely used geo vocab and open dataset.
+gr	http://purl.org/goodrelations/v1#	zoo	Good Relations vocab, v. widely used. Martin Hepp notes that Google asked for 'name' property. 
+ical	http://www.w3.org/2002/12/cal/ical#	zoo	Collaboratively RDFized ietf work, done at W3C SWIG. Is this up to date? 
+mo	http://purl.org/ontology/mo/	zoo	Music Ontology. Todo: find out how it relates to the new MusicBrainz rdfa.
+org	http://www.w3.org/ns/org#	zoo	Organizational modelling vocab, from data.gov.uk community; extends FOAF, clashing use of 'member' property.
+owl	http://www.w3.org/2002/07/owl#	zoo	W3C's OWL vocabulary. Fancy RDFS extensions with some DL uptightness. Useful utility vocabs - disjoint etc.
+po	http://purl.org/ontology/po/	zoo	Programmes Ontology, used at BBC.	eg. http://www.bbc.co.uk/programmes/b00sbqnb.rdf
+rdf	http://www.w3.org/1999/02/22-rdf-syntax-ns#	zoo	W3C's RDF vocabulary.
+rdfs	http://www.w3.org/2000/01/rdf-schema#	zoo	W3C's RDFS. Nobody remembers which bits are in RDF or RDFS, so value in including both.
+rel	http://purl.org/vocab/relationship/	zoo	Ian Davis' relationship vocab. XFNish stuff that refines foaf:knows.
+rsa	http://www.w3.org/ns/auth/rsa#	todo	RSA vocabulary, used in WebID / FOAF+SSL protocol. TODO: not finding any labels, term script fails. We should fix this.
+sioc	http://rdfs.org/sioc/ns#	zoo	SIOC began as an extension of FOAF for community discussions, covers blogs, wiki, discussion boards etc.
+skos	http://www.w3.org/2004/02/skos/core#	zoo	W3C vocab for describing thesaurus-like taxonomies; main notion is Concept.
+swanag	http://purl.org/swan/1.2/agents/	zoo	From lifescience community SWAN work on discourse modelling. Let's see if too rich to mix in with general stuff?
+swanci	http://purl.org/swan/1.2/citations/	zoo	Part of SWAN
+swanco	http://purl.org/swan/1.2/swan-commons/	zoo	Part of SWAN
+swande	http://swan.mindinformatics.org/ontologies/1.2/discourse-elements/	zoo	Part of SWAN.
+swanq	http://swan.mindinformatics.org/ontologies/1.2/qualifiers/	zoo	Part of SWAN.
+swanqs	http://swan.mindinformatics.org/ontologies/1.2/qualifiers/	zoo Part of SWAN.
+time	http://www.w3.org/2006/time#	todo	Time vocab at W3C. Used in BBC programmes data. TODO: fix and include. Term script not finding enough.
+tl	http://purl.org/NET/c4dm/timeline.owl#	zoo	Timeline vocab, used in BBC programmes data.
+vcard	http://www.w3.org/2006/vcard/ns#	zoo	Re-RDFIification of the classic IETF work. Provides Address and other detail not in FOAF>
+wot	http://xmlns.com/wot/0.1/	todo	RDFWeb/FOAF vocabulary for (mostly) PGP-signing documents.
+yago	http://dbpedia.org/class/yago/	todo	General ontology derrived from wikipedia/wordnet, used at dbpedia. See above re dbpedia/freebase. Not got any RDF.

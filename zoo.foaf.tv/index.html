@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" version="HTML+RDFa 1.1" lang="en">
+  <head>
+    <title>Schema Zoo</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+  </head>
+  <body>
+    <h1 property="title">Zoo Profile</h1> 
+    <h2>a curated aggregation of terms from popular vocabularies</h2>
+    <p>
+	This profile integrates a collection of terms (properties and types) from independently managed descriptive vocabularies.
+	</p>
+	
+<p>It is not intended to be complete, comprehensive or universally useful. But in many circumstances it may save publishers the trouble of 
+	remembering vocabulary prefixes or URLs. It complements the work on <a href="http://www.w3.org/2010/02/rdfa/profile/data/">data-driven</a> <a href="http://www.w3.org/profile/rdfa-1.1#crawl">common prefix definitions</a> by 
+	providing a richer level of syntactic integration amongst a package of vocabularies. This is an experiment, and is not exclusive. Other profiles
+	can be used instead, or in addition. Terms can always be used via their full URL, or by prefix. We will probably also declare a lot of common prefixes (from <a href="http://prefix.cc/">prefix.cc</a>).
+	</p>
+	
+	<h3>Design</h3>
+	
+	<p>
+	Status: most of this document should be semi-automatically generated. For now focus is on proving the infrastructure (testing RDFa parser support), cleaning 
+    and studying the vocabulary contents. A few terms are documented here manually, to make sure we have things working right. This list is a rough todo list. Note that
+    the initial integration is purely regarding name clashes; there are of course opportunities for closer collaboration amongst these vocabularies, eg. DC's notion Location with
+    geonames, geo or foaf:based_near. That would be a much larger project.
+    </p>
+	
+	<ol>
+		<li>We begin with <a href="http://dublincore.org/documents/dcmi-terms/">Dublin Core</a> (dcterms:) and all the non-archaic FOAF terms, to describe people, groups and organizations and the things they make and do.</li>
+		<li>We add the Organization vocabulary, which expands on FOAF to model organizational structures more explicitly.</li>
+        <li>We add the SIOC vocabulary, providing a model for various online discussion systems.</li>
+        <li>We add Creative Commons vocabulary for talking about content, copyright and licensing.</li>
+        <li>We add all W3C's main technical 'built-ins': RDF, RDFS and OWL terminology.</li>
+	</ol>
+	
+	<h3>Name conflicts and other decisions (selected highlights...)</h3>
+    <ul>
+	<li>bibo:Collection and skos:Collection; we default to skos:Collection (consulted Bruce Darcus re bibo: on this). Also swanco:Collection.</li>
+    <li>foaf:member, mo:member and org:member; since mo:member specializes foaf:member, we default to foaf:member (Dave Reynolds confirmed this makes sense re org:).</li>
+    <li>dcterms:title and foaf:title; we default to Dublin Core's dcterms:title. Considering aliasing foaf:title as 'honorificPrefix' to match Portable Contacts.</li>
+    <li>dcterms:Agent and foaf:Agent; we default to FOAF Agent, noting that the vocabularies declare reciprocal mappings already.</li>
+    <li>foaf:maker is equivalent to dc:creator; we defer to the Dublin Core version.</li>
+    <li>rdfs:Class and owl:Class and geonames:Class; we defer for now to rdfs:Class, but are open to suggestions re OWL and RDFS.</li>
+    <li>gr:Brand and po:Brand - <a href="http://lists.w3.org/Archives/Public/www-archive/2011Jun/0014.html">investigating</a>, seems gr:Brand is a superclass; and sensible default?</li>
+    <li>swanci:Article and bibo:Article; ditto 'Book'; default to Bibo as more general purpose? Not clear we can fit all of SWAN vocabs in here anyway.<li>
+	<li>bibo:Code, geonames:Code - todo: investigate relative usage levels and importance within the vocabulary. Do meanings overlap?</li>
+    <li>Conclusion re SWAN  - these vocabs bring too many name clashes for now, so we won't reflect terms into defaults without more careful analysis.</li>
+    <li>sioc:Container, rdfs:Container. Default to SIOC since RDFS's is just superclass of Bag, Seq, Alt and rarely used in normal instance data.</li>
+    <li>For more raw details, see <a href="zoo/zoo_manifest.txt">manifest</a></li>
+    <li>foaf:Document and bibo:Document; assume they're the same. Defaulting to foaf:Document for now. See <a href="http://groups.google.com/group/bibliographic-ontology-specification-group/browse_thread/thread/340d2fc174d40f6">previous discussions</a>. Ditto :Image class.</li>
+     <li>bibo:Email and vcard:Email - todo: investigate</li>
+     <li>bio:Event and ev:Event - same notion of events? See also other event ontologies. Unclear what to do here.</li>
+     <li><a href="http://musicontology.com/#term_Genre">mo:Genre</a> " An expressive style of music." and <a href="http://www.bbc.co.uk/ontologies/programmes/2009-09-07.shtml#Genre">po:Genre</a> "Genre - An anchor point for a programmes' genre taxonomy, e.g. 'Drama'/'Biographical'.". Awkward, both are very specific. Todo: investigate with YvesR.</li>
+     <li>bio:Inverval and tl:Interval - todo: compare semantics and data structure.</li>
+     <li>mo:Label and vcard:Label; default to Music Ontology.</li>
+     <li>gr:Location, vcard:Location ... hmm isn't there dcterms:Location too, why did the conflict not show up? @@TODO: bug?</li>
+   	</ul>
+
+<h2>DC properties</h2>
+<ul>
+<li><div typeof="rdfa:TermMapping"><span class="term" property="rdfa:term">title</td> (<span property="rdfa:uri">http://purl.org/dc/terms/title</span>)</li>
+<li><div typeof="rdfa:TermMapping"><span class="term" property="rdfa:term">description</td> (<span property="rdfa:uri">http://purl.org/dc/terms/description</span>)</li>
+<li><div typeof="rdfa:TermMapping"><span class="term" property="rdfa:term">subject</td> (<span property="rdfa:uri">http://purl.org/dc/terms/subject</span>)</li>
+<li><div typeof="rdfa:TermMapping"><span class="term" property="rdfa:term">date</td> (<span property="rdfa:uri">http://purl.org/dc/terms/date</span>)</li>
+<li><div typeof="rdfa:TermMapping"><span class="term" property="rdfa:term">creator</td> (<span property="rdfa:uri">http://purl.org/dc/terms/creator</span>)</li>
+<!-- ... -->
+</ul>
+
+<h2>DC classes</h2>
+<ul>
+<li><div typeof="rdfa:TermMapping"><span class="term" property="rdfa:term">FileFormat</td> (<span property="rdfa:uri">http://purl.org/dc/terms/FileFormat</span>)</li>
+<li><div typeof="rdfa:TermMapping"><span class="term" property="rdfa:term">LicenseDocument</td> (<span property="rdfa:uri">http://purl.org/dc/terms/LicenseDocument</span>)</li>
+<li><div typeof="rdfa:TermMapping"><span class="term" property="rdfa:term">FileFormat</td> (<span property="rdfa:uri">http://purl.org/dc/terms/FileFormat</span>)</li>
+
+<!-- ... -->
+</ul>
+
+
+
+  </body>
+</html>

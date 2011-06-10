@@ -1,0 +1,29 @@
+Corporation	http://dbpedia.org/resource/Corporation
+EducationalOrganization	http://dbpedia.org/resource/Educational_organization
+CollegeOrUniversity	http://dbpedia.org/resource/College
+CollegeOrUniversity	http://dbpedia.org/resource/University
+ElementarySchool	http://dbpedia.org/resource/School
+HighSchool	http://dbpedia.org/resource/School
+MiddleSchool	http://dbpedia.org/resource/School
+PreSchool	http://dbpedia.org/resource/School
+GovernmentOrganization	http://dbpedia.org/resource/GovernmentAgency
+NGO	http://dbpedia.org/resource/governmental_organization
+
+http://lod.openlinksw.com/sparql?default-graph-uri=&should-sponge=&query=select+%3Fx+where+{+%3Fx+a+%3Chttp%3A%2F%2Fdbpedia.org%2Fclass%2Fyago%2FNon-governmentalOrganizations%3E+.+}%0D%0A&debug=on&timeout=&format=text%2Fhtml&CXML_redir_for_subjs=121&CXML_redir_for_hrefs=&save=display&fname=
+
+
+PerformingGroup
+DanceGroup
+MusicGroup
+TheaterGroup
+SportTeam
+Person
+Product
+Place
+Product
+
+
+# http://mappings.dbpedia.org/server/ontology/classes#College
+# http://mappings.dbpedia.org/index.php/OntologyClass:College
+# http://mappings.dbpedia.org/server/ontology/classes/School
+# http://mappings.dbpedia.org/server/ontology/classes/GovernmentAgency

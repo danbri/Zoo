@@ -1,0 +1,20 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+select distinct ?t ?l where { 
+ { ?t a rdf:Property .  }
+ UNION
+ { ?t a owl:Property .  }
+ UNION
+ { ?t a owl:DatatypeProperty .  }
+ UNION
+ { ?t a owl:ObjectProperty .  }
+ UNION 
+ { ?t a owl:Class .  }
+ UNION
+ { ?t a rdfs:Class .  }
+ OPTIONAL { ?t rdfs:label ?l }
+ FILTER ( lang(?l) = 'EN' || lang(?l) = '' || lang(?l) = 'en' || lang(?l) = 'en-us') .
+ FILTER isURI(?t) .
+}

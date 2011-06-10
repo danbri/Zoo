@@ -1,0 +1,83 @@
+#!/usr/bin/perl
+#
+# Script to analyse terms
+
+# Dan Brickley <danbri@danbri.org>
+
+# Uses Perl SPARQL library. We can also test that locally with:
+# ./sparql query.rq file:data/rel.rdf 
+# or with roqet,
+# roqet file:query2.rq file:foo -D file:data/dcterms.rdf 
+# ./sparql query2.rq file:data/dcterms.rdf 
+
+
+use warnings;
+use RDF::Query;
+
+my $query_file  = 'query.rq';
+my $sparql      = do { local($/) = undef; open(my $fh, '<:utf8', $query_file); <$fh> };
+my @todo = ();
+my %prefix = ();
+open(IN,"master.txt") || die "No input data.";
+
+while(<IN>) {
+  chomp;
+  if (m/^#/) { next;}
+  my ($prefix, $uri, $tag, $comment) = split(/\t/,$_,4);
+  # print "PREFIX: $prefix URI: $uri TAG: $tag COMMENT: $comment\n";
+
+  # We assume harvest.pl has been run, and that data/ dir has .rdf for each term
+  if ($tag =~ m/zoo/) {
+    $prefix{$prefix}=$uri;  
+    push(@todo, $prefix);
+  } 
+}
+
+## 
+
+my %score = ();
+my %where = ();
+foreach my $v (@todo) {
+  my $query	= RDF::Query->new( $sparql );
+  unless ($query) { warn RDF::Query->error; exit; }
+
+  my $url = 'file:data/'.$v. '.rdf';
+  my $store	= RDF::Trine::Store::DBI->temporary_store();
+  my $model	= RDF::Trine::Model->new( $store );
+  RDF::Trine::Parser->parse_url_into_model( $url, $model );
+  my $iter	= $query->execute( $model );
+
+  my $failed = 1;
+  while (my $s = $iter->next) {
+    $failed = 0;
+    my $t = $s->{'t'};
+    $t =~ m/([^#\/]+)>$/;
+    my $term = $1;
+    my $ns = $prefix{$v};
+    if (!$ns) { print "WARNING: Unknown prefix $v"; }
+    my $t2 = $t;
+    chop $t2;
+
+    # ignore mention of external namespace terms
+    if ( $t2 =~ s/\Q<$ns\E// ) {
+      print "$ns\t$v\t$t2\n";
+    }
+
+    if ($score{$term}) { 
+      $score{$term} = $score{$term} + 1;
+      $where{$term} = $where{$term} . " $v:";
+
+    } else {
+      $score{$term} = 1;
+      $where{$term} = $v .":";
+    }
+
+  }
+  if ($failed) { print "WARNING: Failed to find any terms in $v.\n" }
+
+}
+
+foreach my $i (sort keys %score) {
+  if ($score{$i} > 1) {  print "term: $i score: ".$score{$i} ." \t\t". $where{$i}."\n"; }
+}
+
