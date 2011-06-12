@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" version="HTML+RDFa 1.1" lang="en">
+  <head>
+    <title>Schema Zoo</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+<link rel="stylesheet" href="js/tipTip.css" />
+  </head>
+
+  <body class="content" xmlns:rdfa="http://www.w3.org/ns/rdfa#"> <!-- added for 1.0 parsers -->
+
+
+
+
+	<h3>Design notes</h3>
+	
+	<p>
+	Status: most of this document should be semi-automatically generated. For now focus is on proving the infrastructure (testing RDFa parser support), cleaning 
+    and studying the vocabulary contents. A few terms are documented here manually, to make sure we have things working right. This list is a rough todo list. Note that
+    the initial integration is purely regarding name clashes; there are of course opportunities for closer collaboration amongst these vocabularies, eg. DC's notion Location with
+    geonames, geo or foaf:based_near. That would be a much larger project.
+    </p>
+	
+	<p>RDFa 1.1 parsers that can handle this include the Ruby gem <a href="http://rdf.rubyforge.org/rdfa/">rdf-rdfa</a> and <a href="http://www.w3.org/2007/08/pyRdfa/Shadow.html">pyRDFa</a>.</p>
+	
+	<ol>
+		<li>We much prefer properties to begin lowercase, classes uppercase. One less thing for users to remember.</li>
+		<li>We begin with <a href="http://dublincore.org/documents/dcmi-terms/">Dublin Core</a> (dcterms:) and all the non-archaic FOAF terms, to describe people, groups and organizations and the things they make and do.</li>
+		<li>We add the Organization vocabulary, which expands on FOAF to model organizational structures more explicitly.</li>
+        <li>We add the SIOC vocabulary, providing a model for various online discussion systems.</li>
+        <li>We add Creative Commons vocabulary for talking about content, copyright and licensing.</li>
+        <li>We add all W3C's main technical 'built-ins': RDF, RDFS and OWL terminology.</li>
+	</ol>
+	
+	<h3>Name conflicts and other decisions (selected highlights...)</h3>
+    <ul>
+	<li>bibo:Collection and skos:Collection; we default to skos:Collection (consulted Bruce Darcus re bibo: on this). Also swanco:Collection.</li>
+    <li>foaf:member, mo:member and org:member; since mo:member specializes foaf:member, we default to foaf:member (Dave Reynolds confirmed this makes sense re org:).</li>
+    <li>dcterms:title and foaf:title; we default to Dublin Core's dcterms:title. Considering aliasing foaf:title as 'honorificPrefix' to match Portable Contacts.</li>
+    <li>dcterms:Agent and foaf:Agent; we default to FOAF Agent, noting that the vocabularies declare reciprocal mappings already.</li>
+    <li>foaf:maker is equivalent to dc:creator; we defer to the Dublin Core version.</li>
+    <li>rdfs:Class and owl:Class and geonames:Class; we defer for now to rdfs:Class, but are open to suggestions re OWL and RDFS.</li>
+    <li>gr:Brand and po:Brand - <a href="http://lists.w3.org/Archives/Public/www-archive/2011Jun/0014.html">investigating</a>, seems gr:Brand is a superclass; and sensible default?</li>
+    <li>swanci:Article and bibo:Article; ditto 'Book'; default to Bibo as more general purpose? Not clear we can fit all of SWAN vocabs in here anyway.</li>
+	<li>bibo:Code, geonames:Code - todo: investigate relative usage levels and importance within the vocabulary. Do meanings overlap?</li>
+    <li>Conclusion re SWAN  - these vocabs bring too many name clashes for now, so we won't reflect terms into defaults without more careful analysis.</li>
+    <li>sioc:Container, rdfs:Container. Default to SIOC since RDFS's is just superclass of Bag, Seq, Alt and rarely used in normal instance data.</li>
+    <li>For more raw details, see <a href="zoo/zoo_manifest.txt">manifest</a></li>
+    <li>foaf:Document and bibo:Document; assume they're the same. Defaulting to foaf:Document for now. See <a href="http://groups.google.com/group/bibliographic-ontology-specification-group/browse_thread/thread/340d2fc174d40f6">previous discussions</a>. Ditto :Image class.</li>
+     <li>bibo:Email and vcard:Email - todo: investigate</li>
+     <li>bio:Event and ev:Event - same notion of events? See also other event ontologies. Unclear what to do here.</li>
+     <li><a href="http://musicontology.com/#term_Genre">mo:Genre</a> " An expressive style of music." and <a href="http://www.bbc.co.uk/ontologies/programmes/2009-09-07.shtml#Genre">po:Genre</a> "Genre - An anchor point for a programmes' genre taxonomy, e.g. 'Drama'/'Biographical'.". Awkward, both are very specific. Todo: investigate with YvesR.</li>
+     <li>bio:Inverval and tl:Interval - todo: compare semantics and data structure.</li>
+     <li>mo:Label and vcard:Label; default to Music Ontology.</li>
+     <li>gr:Location, vcard:Location ... hmm isn't there dcterms:Location too, why did the conflict not show up? @@TODO: bug?</li>
+   	</ul>
+
+  </body>
+</html>
