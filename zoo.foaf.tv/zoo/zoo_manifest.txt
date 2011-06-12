@@ -10,7 +10,7 @@ http://purl.org/ontology/bibo/	bibo	shortTitle	p,zoo
 http://purl.org/ontology/bibo/	bibo	issue	p,zoo
 http://purl.org/ontology/bibo/	bibo	numPages	p,zoo
 http://purl.org/ontology/bibo/	bibo	content	p,zoo
-http://purl.org/ontology/bibo/	bibo	abstract	p,zoo
+http://purl.org/ontology/bibo/	bibo	abstract	p,defer,TODO Defers to dc:abstract (investigate...).
 http://purl.org/ontology/bibo/	bibo	pageStart	p,zoo
 http://purl.org/ontology/bibo/	bibo	section	p,zoo
 http://purl.org/ontology/bibo/	bibo	chapter	p,zoo
@@ -24,7 +24,7 @@ http://purl.org/ontology/bibo/	bibo	translationOf	p,zoo
 http://purl.org/ontology/bibo/	bibo	recipient	p,zoo
 http://purl.org/ontology/bibo/	bibo	court	p,zoo
 http://purl.org/ontology/bibo/	bibo	owner	p,zoo
-http://purl.org/ontology/bibo/	bibo	producer	p,zoo
+http://purl.org/ontology/bibo/	bibo	producer	p,todo,defer	Defer to mo:producer (also po:producer), since production central to music. Investigate.
 http://purl.org/ontology/bibo/	bibo	interviewer	p,zoo
 http://purl.org/ontology/bibo/	bibo	editor	p,zoo
 http://purl.org/ontology/bibo/	bibo	presentedAt	p,zoo
@@ -53,14 +53,14 @@ http://purl.org/ontology/bibo/	bibo	LegalDocument	c,zoo
 http://purl.org/ontology/bibo/	bibo	AcademicArticle	c,zoo
 http://purl.org/ontology/bibo/	bibo	Note	c,zoo
 http://purl.org/ontology/bibo/	bibo	DocumentPart	c,zoo
-http://purl.org/ontology/bibo/	bibo	Series	c,zoo
+http://purl.org/ontology/bibo/	bibo	Series	c,defer,TODO Clash with po:. Investigate.
 http://purl.org/ontology/bibo/	bibo	Periodical	c,zoo
 http://purl.org/ontology/bibo/	bibo	PersonalCommunication	c,zoo
 http://purl.org/ontology/bibo/	bibo	AudioDocument	c,zoo
 http://purl.org/ontology/bibo/	bibo	Newspaper	c,zoo
 http://purl.org/ontology/bibo/	bibo	LegalDecision	c,zoo
 http://purl.org/ontology/bibo/	bibo	Issue	c,zoo
-http://purl.org/ontology/bibo/	bibo	Performance	c,zoo
+http://purl.org/ontology/bibo/	bibo	Performance	c,defer	Defers to mo:Performance. Investigate.
 http://purl.org/ontology/bibo/	bibo	MultiVolumeBook	c,zoo
 http://purl.org/ontology/bibo/	bibo	Webpage	c,zoo
 http://purl.org/ontology/bibo/	bibo	Brief	c,zoo
@@ -69,7 +69,7 @@ http://purl.org/ontology/bibo/	bibo	Quote	c,zoo
 http://purl.org/ontology/bibo/	bibo	Film	c,zoo
 http://purl.org/ontology/bibo/	bibo	AudioVisualDocument	c,zoo
 http://purl.org/ontology/bibo/	bibo	CollectedDocument	c,zoo
-http://purl.org/ontology/bibo/	bibo	Document	c,zoo
+http://purl.org/ontology/bibo/	bibo	Document	c,defer	Defers to foaf:Document.
 http://purl.org/ontology/bibo/	bibo	Manual	c,zoo
 http://purl.org/ontology/bibo/	bibo	Slide	c,zoo
 http://purl.org/ontology/bibo/	bibo	Bill	c,zoo
@@ -91,7 +91,7 @@ http://purl.org/ontology/bibo/	bibo	Excerpt	c,zoo
 http://purl.org/ontology/bibo/	bibo	Book	c,zoo
 http://purl.org/ontology/bibo/	bibo	Standard	c,zoo	Not sure about this one.
 http://purl.org/ontology/bibo/	bibo	Proceedings	c,zoo
-http://purl.org/ontology/bibo/	bibo	Image	c,zoo
+http://purl.org/ontology/bibo/	bibo	Image	c,defer	Using foaf:Image for now. Ok?
 http://purl.org/ontology/bibo/	bibo	Chapter	c,zoo
 http://purl.org/ontology/bibo/	bibo	LegalCaseDocument	c,zoo
 http://purl.org/ontology/bibo/	bibo	BookSection	c,zoo
@@ -99,7 +99,7 @@ http://purl.org/ontology/bibo/	bibo	Code	c,TODO Clashes with something...
 http://purl.org/ontology/bibo/	bibo	Letter	c,zoo
 http://purl.org/ontology/bibo/	bibo	CourtReporter	c,zoo
 http://purl.org/ontology/bibo/	bibo	Legislation	c,zoo
-http://purl.org/ontology/bibo/	bibo	Map	c,zoo	Check Geonames.
+http://purl.org/ontology/bibo/	bibo	Map	c,todo	Check Geonames etc.
 http://purl.org/vocab/bio/0.1/	bio	principal	c,zoo
 http://purl.org/vocab/bio/0.1/	bio	immediatelyFollowingEvent	p,zoo
 http://purl.org/vocab/bio/0.1/	bio	immediatelyPrecedingEvent	p,zoo
@@ -112,17 +112,17 @@ http://purl.org/vocab/bio/0.1/	bio	parent	p,zoo
 http://purl.org/vocab/bio/0.1/	bio	mother	p,zoo
 http://purl.org/vocab/bio/0.1/	bio	keywords	p,zoo
 http://purl.org/vocab/bio/0.1/	bio	eventInterval	p,zoo
-http://purl.org/vocab/bio/0.1/	bio	organization	p,zoo
+http://purl.org/vocab/bio/0.1/	bio	organization	p,defer,todo	Defers to org:organization. See also vCard. Investigate.
 http://purl.org/vocab/bio/0.1/	bio	father	p,zoo
 http://purl.org/vocab/bio/0.1/	bio	biography	p,zoo
 http://purl.org/vocab/bio/0.1/	bio	child	p,zoo
-http://purl.org/vocab/bio/0.1/	bio	place	p,zoo
+http://purl.org/vocab/bio/0.1/	bio	place	p,TODO Also po, ev, ...
 http://purl.org/vocab/bio/0.1/	bio	witness	p,zoo
 http://purl.org/vocab/bio/0.1/	bio	spectator	p,zoo
 http://purl.org/vocab/bio/0.1/	bio	position	p,zoo
 http://purl.org/vocab/bio/0.1/	bio	followingEvent	p,zoo
 http://purl.org/vocab/bio/0.1/	bio	initiatingEvent	p,zoo
-http://purl.org/vocab/bio/0.1/	bio	date	p,zoo
+http://purl.org/vocab/bio/0.1/	bio	date	p,defer,TODO Defers to dc:date for now. Investigate.
 http://purl.org/vocab/bio/0.1/	bio	precedingEvent	p,zoo
 http://purl.org/vocab/bio/0.1/	bio	concurrentEvent	p,zoo
 http://purl.org/vocab/bio/0.1/	bio	partner	p,zoo
@@ -169,11 +169,11 @@ http://purl.org/vocab/bio/0.1/	bio	Cremation	c,zoo
 http://creativecommons.org/ns#	cc	jurisdiction	p,zoo
 http://creativecommons.org/ns#	cc	prohibits	p,zoo
 http://creativecommons.org/ns#	cc	deprecatedOn	p,zoo
-http://creativecommons.org/ns#	cc	requires	p,zoo
+http://creativecommons.org/ns#	cc	requires	p,defer,TODO	Defers to dc:requires.
 http://creativecommons.org/ns#	cc	permits	p,zoo
-http://creativecommons.org/ns#	cc	license	p,zoo
+http://creativecommons.org/ns#	cc	license	p,defer,TODO	Defers to dc:license (TODO: investigate this with both)
 http://creativecommons.org/ns#	cc	Requirement	c,zoo
-http://creativecommons.org/ns#	cc	Jurisdiction	c,zoo
+http://creativecommons.org/ns#	cc	Jurisdiction	c,defer,TODO Defers to dc:Jurisdiction
 http://creativecommons.org/ns#	cc	Prohibition	c,zoo
 http://creativecommons.org/ns#	cc	Permission	c,zoo
 http://creativecommons.org/ns#	cc	License	c,zoo
@@ -268,7 +268,7 @@ http://purl.org/dc/terms/	dcterms	BibliographicResource	c,zoo
 http://usefulinc.com/ns/doap#	doap	bug-database	p,zoo
 http://usefulinc.com/ns/doap#	doap	release	p,zoo
 http://usefulinc.com/ns/doap#	doap	screenshots	p,zoo
-http://usefulinc.com/ns/doap#	doap	translator	p,zoo
+http://usefulinc.com/ns/doap#	doap	translator	p,defer,TODO Defers to bibo:translator. Investigate.
 http://usefulinc.com/ns/doap#	doap	developer	p,zoo
 http://usefulinc.com/ns/doap#	doap	name	p,defers Defaulting to foaf:name
 http://usefulinc.com/ns/doap#	doap	repository	p,zoo
@@ -280,7 +280,7 @@ http://usefulinc.com/ns/doap#	doap	wiki	p,zoo
 http://usefulinc.com/ns/doap#	doap	revision	p,zoo
 http://usefulinc.com/ns/doap#	doap	download-page	p,zoo
 http://usefulinc.com/ns/doap#	doap	helper	p,zoo
-http://usefulinc.com/ns/doap#	doap	location	p,zoo	Check for similar.
+http://usefulinc.com/ns/doap#	doap	location	p,todo	Check for similar.
 http://usefulinc.com/ns/doap#	doap	vendor	p,zoo
 http://usefulinc.com/ns/doap#	doap	documenter	p,zoo
 http://usefulinc.com/ns/doap#	doap	browse	p,zoo
@@ -289,737 +289,737 @@ http://usefulinc.com/ns/doap#	doap	language	p,defer	Defer to dc:language?
 http://usefulinc.com/ns/doap#	doap	anon-root	p,zoo
 http://usefulinc.com/ns/doap#	doap	download-mirror	p,zoo
 http://usefulinc.com/ns/doap#	doap	implements	p,zoo
-http://usefulinc.com/ns/doap#	doap	created	p,zoo
+http://usefulinc.com/ns/doap#	doap	created	p,defer,TODO Defers to dc:created; investigate.
 http://usefulinc.com/ns/doap#	doap	homepage	p,defer	Defer to foaf:homepage
 http://usefulinc.com/ns/doap#	doap	file-release	p,zoo
 http://usefulinc.com/ns/doap#	doap	mailing-list	p,zoo
 http://usefulinc.com/ns/doap#	doap	audience	p,defer Defer to dc:audience
-http://usefulinc.com/ns/doap#	doap	service-endpoint
-http://usefulinc.com/ns/doap#	doap	programming-language
-http://usefulinc.com/ns/doap#	doap	blog
-http://usefulinc.com/ns/doap#	doap	description
-http://usefulinc.com/ns/doap#	doap	platform
-http://usefulinc.com/ns/doap#	doap	category
-http://usefulinc.com/ns/doap#	doap	maintainer
-http://usefulinc.com/ns/doap#	doap	license
-http://usefulinc.com/ns/doap#	doap	ArchRepository
-http://usefulinc.com/ns/doap#	doap	CVSRepository
-http://usefulinc.com/ns/doap#	doap	BKRepository
-http://usefulinc.com/ns/doap#	doap	Repository
-http://usefulinc.com/ns/doap#	doap	HgRepository
-http://usefulinc.com/ns/doap#	doap	SVNRepository
-http://usefulinc.com/ns/doap#	doap	BazaarBranch
-http://usefulinc.com/ns/doap#	doap	Specification
-http://usefulinc.com/ns/doap#	doap	GitRepository
-http://usefulinc.com/ns/doap#	doap	Version
-http://usefulinc.com/ns/doap#	doap	DarcsRepository
-http://usefulinc.com/ns/doap#	doap	Project
-http://purl.org/NET/c4dm/event.owl#	ev	literal_factor
-http://purl.org/NET/c4dm/event.owl#	ev	isAgentIn
-http://purl.org/NET/c4dm/event.owl#	ev	time
-http://purl.org/NET/c4dm/event.owl#	ev	producedIn
-http://purl.org/NET/c4dm/event.owl#	ev	place
-http://purl.org/NET/c4dm/event.owl#	ev	isFactorOf
-http://purl.org/NET/c4dm/event.owl#	ev	sub_event
-http://purl.org/NET/c4dm/event.owl#	ev	factor
-http://purl.org/NET/c4dm/event.owl#	ev	product
-http://purl.org/NET/c4dm/event.owl#	ev	agent
-http://purl.org/NET/c4dm/event.owl#	ev	Event
-http://purl.org/NET/c4dm/event.owl#	ev	Factor
-http://purl.org/NET/c4dm/event.owl#	ev	Product
-http://xmlns.com/foaf/0.1/	foaf	publications
-http://xmlns.com/foaf/0.1/	foaf	pastProject
-http://xmlns.com/foaf/0.1/	foaf	topic
-http://xmlns.com/foaf/0.1/	foaf	workInfoHomepage
-http://xmlns.com/foaf/0.1/	foaf	depicts
-http://xmlns.com/foaf/0.1/	foaf	skypeID
-http://xmlns.com/foaf/0.1/	foaf	gender
-http://xmlns.com/foaf/0.1/	foaf	fundedBy
-http://xmlns.com/foaf/0.1/	foaf	workplaceHomepage
-http://xmlns.com/foaf/0.1/	foaf	openid
-http://xmlns.com/foaf/0.1/	foaf	page
-http://xmlns.com/foaf/0.1/	foaf	logo
-http://xmlns.com/foaf/0.1/	foaf	mbox
-http://xmlns.com/foaf/0.1/	foaf	schoolHomepage
-http://xmlns.com/foaf/0.1/	foaf	givenName
-http://xmlns.com/foaf/0.1/	foaf	isPrimaryTopicOf
-http://xmlns.com/foaf/0.1/	foaf	depiction
-http://xmlns.com/foaf/0.1/	foaf	currentProject
-http://xmlns.com/foaf/0.1/	foaf	based_near
-http://xmlns.com/foaf/0.1/	foaf	img
-http://xmlns.com/foaf/0.1/	foaf	birthday
-http://xmlns.com/foaf/0.1/	foaf	membershipClass
-http://xmlns.com/foaf/0.1/	foaf	myersBriggs
-http://xmlns.com/foaf/0.1/	foaf	mbox_sha1sum
-http://xmlns.com/foaf/0.1/	foaf	interest
-http://xmlns.com/foaf/0.1/	foaf	focus
-http://xmlns.com/foaf/0.1/	foaf	msnChatID
-http://xmlns.com/foaf/0.1/	foaf	nick
-http://xmlns.com/foaf/0.1/	foaf	holdsAccount
-http://xmlns.com/foaf/0.1/	foaf	plan
-http://xmlns.com/foaf/0.1/	foaf	givenname
-http://xmlns.com/foaf/0.1/	foaf	familyName
-http://xmlns.com/foaf/0.1/	foaf	maker
-http://xmlns.com/foaf/0.1/	foaf	homepage
-http://xmlns.com/foaf/0.1/	foaf	age
-http://xmlns.com/foaf/0.1/	foaf	topic_interest
-http://xmlns.com/foaf/0.1/	foaf	surname
-http://xmlns.com/foaf/0.1/	foaf	geekcode
-http://xmlns.com/foaf/0.1/	foaf	lastName
-http://xmlns.com/foaf/0.1/	foaf	status
-http://xmlns.com/foaf/0.1/	foaf	sha1
-http://xmlns.com/foaf/0.1/	foaf	dnaChecksum
-http://xmlns.com/foaf/0.1/	foaf	family_name
-http://xmlns.com/foaf/0.1/	foaf	accountServiceHomepage
-http://xmlns.com/foaf/0.1/	foaf	firstName
-http://xmlns.com/foaf/0.1/	foaf	icqChatID
-http://xmlns.com/foaf/0.1/	foaf	theme
-http://xmlns.com/foaf/0.1/	foaf	title
-http://xmlns.com/foaf/0.1/	foaf	name
-http://xmlns.com/foaf/0.1/	foaf	weblog
-http://xmlns.com/foaf/0.1/	foaf	primaryTopic
-http://xmlns.com/foaf/0.1/	foaf	aimChatID
-http://xmlns.com/foaf/0.1/	foaf	phone
-http://xmlns.com/foaf/0.1/	foaf	jabberID
-http://xmlns.com/foaf/0.1/	foaf	account
-http://xmlns.com/foaf/0.1/	foaf	tipjar
-http://xmlns.com/foaf/0.1/	foaf	member
-http://xmlns.com/foaf/0.1/	foaf	thumbnail
-http://xmlns.com/foaf/0.1/	foaf	accountName
-http://xmlns.com/foaf/0.1/	foaf	knows
-http://xmlns.com/foaf/0.1/	foaf	made
-http://xmlns.com/foaf/0.1/	foaf	yahooChatID
-http://xmlns.com/foaf/0.1/	foaf	OnlineEcommerceAccount
-http://xmlns.com/foaf/0.1/	foaf	OnlineAccount
-http://xmlns.com/foaf/0.1/	foaf	Person
-http://xmlns.com/foaf/0.1/	foaf	OnlineGamingAccount
-http://xmlns.com/foaf/0.1/	foaf	Image
-http://xmlns.com/foaf/0.1/	foaf	LabelProperty
-http://xmlns.com/foaf/0.1/	foaf	OnlineChatAccount
-http://xmlns.com/foaf/0.1/	foaf	Organization
-http://xmlns.com/foaf/0.1/	foaf	Agent
-http://xmlns.com/foaf/0.1/	foaf	PersonalProfileDocument
-http://xmlns.com/foaf/0.1/	foaf	Project
-http://xmlns.com/foaf/0.1/	foaf	Document
-http://xmlns.com/foaf/0.1/	foaf	Group
-http://www.w3.org/2003/01/geo/wgs84_pos#	geo	location
-http://www.w3.org/2003/01/geo/wgs84_pos#	geo	lat_long
-http://www.w3.org/2003/01/geo/wgs84_pos#	geo	lat
-http://www.w3.org/2003/01/geo/wgs84_pos#	geo	alt
-http://www.w3.org/2003/01/geo/wgs84_pos#	geo	long
-http://www.w3.org/2003/01/geo/wgs84_pos#	geo	Point
-http://www.w3.org/2003/01/geo/wgs84_pos#	geo	SpatialThing
-http://www.geonames.org/ontology#	geonames	population
-http://www.geonames.org/ontology#	geonames	officialName
-http://www.geonames.org/ontology#	geonames	postalCode
-http://www.geonames.org/ontology#	geonames	shortName
-http://www.geonames.org/ontology#	geonames	countryCode
-http://www.geonames.org/ontology#	geonames	name
-http://www.geonames.org/ontology#	geonames	nearby
-http://www.geonames.org/ontology#	geonames	wikipediaArticle
-http://www.geonames.org/ontology#	geonames	parentADM3
-http://www.geonames.org/ontology#	geonames	featureClass
-http://www.geonames.org/ontology#	geonames	locationMap
-http://www.geonames.org/ontology#	geonames	parentADM2
-http://www.geonames.org/ontology#	geonames	parentCountry
-http://www.geonames.org/ontology#	geonames	parentADM1
-http://www.geonames.org/ontology#	geonames	neighbour
-http://www.geonames.org/ontology#	geonames	featureCode
-http://www.geonames.org/ontology#	geonames	neighbouringFeatures
-http://www.geonames.org/ontology#	geonames	parentFeature
-http://www.geonames.org/ontology#	geonames	nearbyFeatures
-http://www.geonames.org/ontology#	geonames	childrenFeatures
-http://www.geonames.org/ontology#	geonames	parentADM4
-http://www.geonames.org/ontology#	geonames	locatedIn
-http://www.geonames.org/ontology#	geonames	RDFData
-http://www.geonames.org/ontology#	geonames	Map
-http://www.geonames.org/ontology#	geonames	Feature
-http://www.geonames.org/ontology#	geonames	WikipediaArticle
-http://www.geonames.org/ontology#	geonames	Class
-http://www.geonames.org/ontology#	geonames	Code
-http://purl.org/goodrelations/v1#	gr	hasMaxCurrencyValue
-http://purl.org/goodrelations/v1#	gr	hasStockKeepingUnit
-http://purl.org/goodrelations/v1#	gr	hasMaxValueInteger
-http://purl.org/goodrelations/v1#	gr	description
-http://purl.org/goodrelations/v1#	gr	serialNumber
-http://purl.org/goodrelations/v1#	gr	hasValueFloat
-http://purl.org/goodrelations/v1#	gr	validFrom
-http://purl.org/goodrelations/v1#	gr	hasCurrency
-http://purl.org/goodrelations/v1#	gr	availabilityStarts
-http://purl.org/goodrelations/v1#	gr	datatypeProductOrServiceProperty
-http://purl.org/goodrelations/v1#	gr	hasValueInteger
-http://purl.org/goodrelations/v1#	gr	hasMaxValueFloat
-http://purl.org/goodrelations/v1#	gr	hasMinValueFloat
-http://purl.org/goodrelations/v1#	gr	hasNAICS
-http://purl.org/goodrelations/v1#	gr	isListPrice
-http://purl.org/goodrelations/v1#	gr	hasDUNS
-http://purl.org/goodrelations/v1#	gr	hasGTIN-14
-http://purl.org/goodrelations/v1#	gr	valueAddedTaxIncluded
-http://purl.org/goodrelations/v1#	gr	hasGlobalLocationNumber
-http://purl.org/goodrelations/v1#	gr	hasMinValueInteger
-http://purl.org/goodrelations/v1#	gr	hasMPN
-http://purl.org/goodrelations/v1#	gr	validThrough
-http://purl.org/goodrelations/v1#	gr	category
-http://purl.org/goodrelations/v1#	gr	durationOfWarrantyInMonths
-http://purl.org/goodrelations/v1#	gr	hasCurrencyValue
-http://purl.org/goodrelations/v1#	gr	availabilityEnds
-http://purl.org/goodrelations/v1#	gr	closes
-http://purl.org/goodrelations/v1#	gr	hasGTIN-8
-http://purl.org/goodrelations/v1#	gr	hasMinCurrencyValue
-http://purl.org/goodrelations/v1#	gr	eligibleRegions
-http://purl.org/goodrelations/v1#	gr	hasISICv4
-http://purl.org/goodrelations/v1#	gr	legalName
-http://purl.org/goodrelations/v1#	gr	amountOfThisGood
-http://purl.org/goodrelations/v1#	gr	hasEAN_UCC-13
-http://purl.org/goodrelations/v1#	gr	hasMinValue
-http://purl.org/goodrelations/v1#	gr	condition
-http://purl.org/goodrelations/v1#	gr	color
-http://purl.org/goodrelations/v1#	gr	name
-http://purl.org/goodrelations/v1#	gr	hasValue
-http://purl.org/goodrelations/v1#	gr	opens
-http://purl.org/goodrelations/v1#	gr	hasMaxValue
-http://purl.org/goodrelations/v1#	gr	billingIncrement
-http://purl.org/goodrelations/v1#	gr	priceType
-http://purl.org/goodrelations/v1#	gr	hasUnitOfMeasurement
-http://purl.org/goodrelations/v1#	gr	isVariantOf
-http://purl.org/goodrelations/v1#	gr	equal
-http://purl.org/goodrelations/v1#	gr	hasBrand
-http://purl.org/goodrelations/v1#	gr	lesser
-http://purl.org/goodrelations/v1#	gr	hasNext
-http://purl.org/goodrelations/v1#	gr	includesObject
-http://purl.org/goodrelations/v1#	gr	isSimilarTo
-http://purl.org/goodrelations/v1#	gr	valueReference
-http://purl.org/goodrelations/v1#	gr	offers
-http://purl.org/goodrelations/v1#	gr	acceptedPaymentMethods
-http://purl.org/goodrelations/v1#	gr	depth
-http://purl.org/goodrelations/v1#	gr	appliesToPaymentMethod
-http://purl.org/goodrelations/v1#	gr	addOn
-http://purl.org/goodrelations/v1#	gr	hasPrevious
-http://purl.org/goodrelations/v1#	gr	hasPriceSpecification
-http://purl.org/goodrelations/v1#	gr	qualitativeProductOrServiceProperty
-http://purl.org/goodrelations/v1#	gr	typeOfGood
-http://purl.org/goodrelations/v1#	gr	hasMakeAndModel
-http://purl.org/goodrelations/v1#	gr	appliesToDeliveryMethod
-http://purl.org/goodrelations/v1#	gr	availableAtOrFrom
-http://purl.org/goodrelations/v1#	gr	eligibleDuration
-http://purl.org/goodrelations/v1#	gr	advanceBookingRequirement
-http://purl.org/goodrelations/v1#	gr	greater
-http://purl.org/goodrelations/v1#	gr	lesserOrEqual
-http://purl.org/goodrelations/v1#	gr	quantitativeProductOrServiceProperty
-http://purl.org/goodrelations/v1#	gr	hasOpeningHoursSpecification
-http://purl.org/goodrelations/v1#	gr	hasBusinessFunction
-http://purl.org/goodrelations/v1#	gr	successorOf
-http://purl.org/goodrelations/v1#	gr	hasInventoryLevel
-http://purl.org/goodrelations/v1#	gr	eligibleCustomerTypes
-http://purl.org/goodrelations/v1#	gr	hasWarrantyScope
-http://purl.org/goodrelations/v1#	gr	deliveryLeadTime
-http://purl.org/goodrelations/v1#	gr	owns
-http://purl.org/goodrelations/v1#	gr	includes
-http://purl.org/goodrelations/v1#	gr	hasPOS
-http://purl.org/goodrelations/v1#	gr	hasEligibleQuantity
-http://purl.org/goodrelations/v1#	gr	isAccessoryOrSparePartFor
-http://purl.org/goodrelations/v1#	gr	hasManufacturer
-http://purl.org/goodrelations/v1#	gr	eligibleTransactionVolume
-http://purl.org/goodrelations/v1#	gr	predecessorOf
-http://purl.org/goodrelations/v1#	gr	hasOpeningHoursDayOfWeek
-http://purl.org/goodrelations/v1#	gr	weight
-http://purl.org/goodrelations/v1#	gr	greaterOrEqual
-http://purl.org/goodrelations/v1#	gr	height
-http://purl.org/goodrelations/v1#	gr	hasWarrantyPromise
-http://purl.org/goodrelations/v1#	gr	seeks
-http://purl.org/goodrelations/v1#	gr	nonEqual
-http://purl.org/goodrelations/v1#	gr	width
-http://purl.org/goodrelations/v1#	gr	availableDeliveryMethods
-http://purl.org/goodrelations/v1#	gr	isConsumableFor
-http://purl.org/goodrelations/v1#	gr	Individual
-http://purl.org/goodrelations/v1#	gr	QuantitativeValue
-http://purl.org/goodrelations/v1#	gr	PaymentMethod
-http://purl.org/goodrelations/v1#	gr	DayOfWeek
-http://purl.org/goodrelations/v1#	gr	N-Ary-Relations
-http://purl.org/goodrelations/v1#	gr	DeliveryMethod
-http://purl.org/goodrelations/v1#	gr	QualitativeValue
-http://purl.org/goodrelations/v1#	gr	ActualProductOrServiceInstance
-http://purl.org/goodrelations/v1#	gr	DeliveryModeParcelService
-http://purl.org/goodrelations/v1#	gr	OpeningHoursSpecification
-http://purl.org/goodrelations/v1#	gr	WarrantyPromise
-http://purl.org/goodrelations/v1#	gr	DeliveryChargeSpecification
-http://purl.org/goodrelations/v1#	gr	QuantitativeValueFloat
-http://purl.org/goodrelations/v1#	gr	BusinessEntityType
-http://purl.org/goodrelations/v1#	gr	BusinessFunction
-http://purl.org/goodrelations/v1#	gr	SomeItems
-http://purl.org/goodrelations/v1#	gr	ProductOrServiceModel
-http://purl.org/goodrelations/v1#	gr	BusinessEntity
-http://purl.org/goodrelations/v1#	gr	QuantitativeValueInteger
-http://purl.org/goodrelations/v1#	gr	LocationOfSalesOrServiceProvisioning
-http://purl.org/goodrelations/v1#	gr	PriceSpecification
-http://purl.org/goodrelations/v1#	gr	UnitPriceSpecification
-http://purl.org/goodrelations/v1#	gr	Location
-http://purl.org/goodrelations/v1#	gr	WarrantyScope
-http://purl.org/goodrelations/v1#	gr	Brand
-http://purl.org/goodrelations/v1#	gr	PaymentChargeSpecification
-http://purl.org/goodrelations/v1#	gr	PaymentMethodCreditCard
-http://purl.org/goodrelations/v1#	gr	ProductOrService
-http://purl.org/goodrelations/v1#	gr	ProductOrServicesSomeInstancesPlaceholder
-http://purl.org/goodrelations/v1#	gr	Offering
-http://purl.org/goodrelations/v1#	gr	TypeAndQuantityNode
-http://www.w3.org/2002/12/cal/ical#	ical	requestStatus
-http://www.w3.org/2002/12/cal/ical#	ical	contact
-http://www.w3.org/2002/12/cal/ical#	ical	repeat
-http://www.w3.org/2002/12/cal/ical#	ical	X-
-http://www.w3.org/2002/12/cal/ical#	ical	class
-http://www.w3.org/2002/12/cal/ical#	ical	uid
-http://www.w3.org/2002/12/cal/ical#	ical	action
-http://www.w3.org/2002/12/cal/ical#	ical	priority
-http://www.w3.org/2002/12/cal/ical#	ical	sequence
-http://www.w3.org/2002/12/cal/ical#	ical	location
-http://www.w3.org/2002/12/cal/ical#	ical	tzoffsetfrom
-http://www.w3.org/2002/12/cal/ical#	ical	comment
-http://www.w3.org/2002/12/cal/ical#	ical	percentComplete
-http://www.w3.org/2002/12/cal/ical#	ical	status
-http://www.w3.org/2002/12/cal/ical#	ical	description
-http://www.w3.org/2002/12/cal/ical#	ical	method
-http://www.w3.org/2002/12/cal/ical#	ical	version
-http://www.w3.org/2002/12/cal/ical#	ical	summary
-http://www.w3.org/2002/12/cal/ical#	ical	tzname
-http://www.w3.org/2002/12/cal/ical#	ical	categories
-http://www.w3.org/2002/12/cal/ical#	ical	resources
-http://www.w3.org/2002/12/cal/ical#	ical	tzid
-http://www.w3.org/2002/12/cal/ical#	ical	tzoffsetto
-http://www.w3.org/2002/12/cal/ical#	ical	relatedTo
-http://www.w3.org/2002/12/cal/ical#	ical	prodid
-http://www.w3.org/2002/12/cal/ical#	ical	calscale
-http://www.w3.org/2002/12/cal/ical#	ical	transp
-http://www.w3.org/2002/12/cal/ical#	ical	rdate
-http://www.w3.org/2002/12/cal/ical#	ical	trigger
-http://www.w3.org/2002/12/cal/ical#	ical	completed
-http://www.w3.org/2002/12/cal/ical#	ical	dtend
-http://www.w3.org/2002/12/cal/ical#	ical	geo
-http://www.w3.org/2002/12/cal/ical#	ical	exdate
-http://www.w3.org/2002/12/cal/ical#	ical	recurrenceId
-http://www.w3.org/2002/12/cal/ical#	ical	organizer
-http://www.w3.org/2002/12/cal/ical#	ical	exrule
-http://www.w3.org/2002/12/cal/ical#	ical	duration
-http://www.w3.org/2002/12/cal/ical#	ical	attendee
-http://www.w3.org/2002/12/cal/ical#	ical	lastModified
-http://www.w3.org/2002/12/cal/ical#	ical	freebusy
-http://www.w3.org/2002/12/cal/ical#	ical	due
-http://www.w3.org/2002/12/cal/ical#	ical	rrule
-http://www.w3.org/2002/12/cal/ical#	ical	dtstart
-http://www.w3.org/2002/12/cal/ical#	ical	attach
-http://www.w3.org/2002/12/cal/ical#	ical	dtstamp
-http://www.w3.org/2002/12/cal/ical#	ical	url
-http://www.w3.org/2002/12/cal/ical#	ical	tzurl
-http://www.w3.org/2002/12/cal/ical#	ical	created
-http://www.w3.org/2002/12/cal/ical#	ical	Valarm
-http://www.w3.org/2002/12/cal/ical#	ical	Vevent
-http://www.w3.org/2002/12/cal/ical#	ical	Vfreebusy
-http://www.w3.org/2002/12/cal/ical#	ical	Vjournal
-http://www.w3.org/2002/12/cal/ical#	ical	Vtodo
-http://www.w3.org/2002/12/cal/ical#	ical	Vtimezone
-http://purl.org/ontology/mo/	mo	tempo
-http://purl.org/ontology/mo/	mo	track_count
-http://purl.org/ontology/mo/	mo	movement_number
-http://purl.org/ontology/mo/	mo	track_number
-http://purl.org/ontology/mo/	mo	record_side
-http://purl.org/ontology/mo/	mo	upc
-http://purl.org/ontology/mo/	mo	musicbrainz_guid
-http://purl.org/ontology/mo/	mo	activity_end
-http://purl.org/ontology/mo/	mo	meter
-http://purl.org/ontology/mo/	mo	trmid
-http://purl.org/ontology/mo/	mo	record_number
-http://purl.org/ontology/mo/	mo	bpm
-http://purl.org/ontology/mo/	mo	opus
-http://purl.org/ontology/mo/	mo	catalogue_number
-http://purl.org/ontology/mo/	mo	ipi
-http://purl.org/ontology/mo/	mo	ismn
-http://purl.org/ontology/mo/	mo	record_count
-http://purl.org/ontology/mo/	mo	puid
-http://purl.org/ontology/mo/	mo	iswc
-http://purl.org/ontology/mo/	mo	ean
-http://purl.org/ontology/mo/	mo	encoding
-http://purl.org/ontology/mo/	mo	grid
-http://purl.org/ontology/mo/	mo	text
-http://purl.org/ontology/mo/	mo	isrc
-http://purl.org/ontology/mo/	mo	lc
-http://purl.org/ontology/mo/	mo	activity_start
-http://purl.org/ontology/mo/	mo	gtin
-http://purl.org/ontology/mo/	mo	uuid
-http://purl.org/ontology/mo/	mo	onlinecommunity
-http://purl.org/ontology/mo/	mo	fanpage
-http://purl.org/ontology/mo/	mo	published
-http://purl.org/ontology/mo/	mo	possess_item
-http://purl.org/ontology/mo/	mo	sampled
-http://purl.org/ontology/mo/	mo	member
-http://purl.org/ontology/mo/	mo	movement
-http://purl.org/ontology/mo/	mo	sampled_version
-http://purl.org/ontology/mo/	mo	paid_download
-http://purl.org/ontology/mo/	mo	produced_score
-http://purl.org/ontology/mo/	mo	exchange_item
-http://purl.org/ontology/mo/	mo	release
-http://purl.org/ontology/mo/	mo	producer
-http://purl.org/ontology/mo/	mo	produced_sound
-http://purl.org/ontology/mo/	mo	performed
-http://purl.org/ontology/mo/	mo	signal
-http://purl.org/ontology/mo/	mo	wikipedia
-http://purl.org/ontology/mo/	mo	amazon_asin
-http://purl.org/ontology/mo/	mo	listened
-http://purl.org/ontology/mo/	mo	produced
-http://purl.org/ontology/mo/	mo	arrangement_of
-http://purl.org/ontology/mo/	mo	published_as
-http://purl.org/ontology/mo/	mo	member_of
-http://purl.org/ontology/mo/	mo	publication_of
-http://purl.org/ontology/mo/	mo	remixed
-http://purl.org/ontology/mo/	mo	compilation_of
-http://purl.org/ontology/mo/	mo	lyrics
-http://purl.org/ontology/mo/	mo	musicmoz
-http://purl.org/ontology/mo/	mo	origin
-http://purl.org/ontology/mo/	mo	musicbrainz
-http://purl.org/ontology/mo/	mo	track
-http://purl.org/ontology/mo/	mo	event_homepage
-http://purl.org/ontology/mo/	mo	djmixed_by
-http://purl.org/ontology/mo/	mo	recorded_as
-http://purl.org/ontology/mo/	mo	remaster_of
-http://purl.org/ontology/mo/	mo	mailorder
-http://purl.org/ontology/mo/	mo	recorded_in
-http://purl.org/ontology/mo/	mo	review
-http://purl.org/ontology/mo/	mo	compiler
-http://purl.org/ontology/mo/	mo	derived_from
-http://purl.org/ontology/mo/	mo	primary_instrument
-http://purl.org/ontology/mo/	mo	medley_of
-http://purl.org/ontology/mo/	mo	engineered
-http://purl.org/ontology/mo/	mo	composer
-http://purl.org/ontology/mo/	mo	olga
-http://purl.org/ontology/mo/	mo	group
-http://purl.org/ontology/mo/	mo	interpreter
-http://purl.org/ontology/mo/	mo	licence
-http://purl.org/ontology/mo/	mo	homepage
-http://purl.org/ontology/mo/	mo	produced_signal_group
-http://purl.org/ontology/mo/	mo	image
-http://purl.org/ontology/mo/	mo	contains_sample_from
-http://purl.org/ontology/mo/	mo	sampled_version_of
-http://purl.org/ontology/mo/	mo	discography
-http://purl.org/ontology/mo/	mo	download
-http://purl.org/ontology/mo/	mo	encodes
-http://purl.org/ontology/mo/	mo	conducted
-http://purl.org/ontology/mo/	mo	other_release_of
-http://purl.org/ontology/mo/	mo	label
-http://purl.org/ontology/mo/	mo	genre
-http://purl.org/ontology/mo/	mo	want_item
-http://purl.org/ontology/mo/	mo	produced_signal
-http://purl.org/ontology/mo/	mo	mashup_of
-http://purl.org/ontology/mo/	mo	record
-http://purl.org/ontology/mo/	mo	sampler
-http://purl.org/ontology/mo/	mo	sell_item
-http://purl.org/ontology/mo/	mo	arranged_in
-http://purl.org/ontology/mo/	mo	free_download
-http://purl.org/ontology/mo/	mo	media_type
-http://purl.org/ontology/mo/	mo	djmix_of
-http://purl.org/ontology/mo/	mo	membership
-http://purl.org/ontology/mo/	mo	tribute_to
-http://purl.org/ontology/mo/	mo	biography
-http://purl.org/ontology/mo/	mo	remix_of
-http://purl.org/ontology/mo/	mo	headliner
-http://purl.org/ontology/mo/	mo	myspace
-http://purl.org/ontology/mo/	mo	performed_in
-http://purl.org/ontology/mo/	mo	composed_in
-http://purl.org/ontology/mo/	mo	key
-http://purl.org/ontology/mo/	mo	translation_of
-http://purl.org/ontology/mo/	mo	remixer
-http://purl.org/ontology/mo/	mo	imdb
-http://purl.org/ontology/mo/	mo	records
-http://purl.org/ontology/mo/	mo	djmixed
-http://purl.org/ontology/mo/	mo	produced_work
-http://purl.org/ontology/mo/	mo	supporting_musician
-http://purl.org/ontology/mo/	mo	performance_of
-http://purl.org/ontology/mo/	mo	preview_download
-http://purl.org/ontology/mo/	mo	recording_of
-http://purl.org/ontology/mo/	mo	collaborated_with
-http://purl.org/ontology/mo/	mo	similar_to
-http://purl.org/ontology/mo/	mo	compiled
-http://purl.org/ontology/mo/	mo	discogs
-http://purl.org/ontology/mo/	mo	publishing_location
-http://purl.org/ontology/mo/	mo	publisher
-http://purl.org/ontology/mo/	mo	time
-http://purl.org/ontology/mo/	mo	Arrangement
-http://purl.org/ontology/mo/	mo	ReleaseStatus
-http://purl.org/ontology/mo/	mo	Score
-http://purl.org/ontology/mo/	mo	SoundEngineer
-http://purl.org/ontology/mo/	mo	Composition
-http://purl.org/ontology/mo/	mo	MusicalWork
-http://purl.org/ontology/mo/	mo	MusicalExpression
-http://purl.org/ontology/mo/	mo	PublishedScore
-http://purl.org/ontology/mo/	mo	SignalGroup
-http://purl.org/ontology/mo/	mo	AnalogSignal
-http://purl.org/ontology/mo/	mo	Performer
-http://purl.org/ontology/mo/	mo	DCC
-http://purl.org/ontology/mo/	mo	PublishedLibretto
-http://purl.org/ontology/mo/	mo	MusicalItem
-http://purl.org/ontology/mo/	mo	DAT
-http://purl.org/ontology/mo/	mo	Vinyl
-http://purl.org/ontology/mo/	mo	Instrumentation
-http://purl.org/ontology/mo/	mo	MusicArtist
-http://purl.org/ontology/mo/	mo	Arranger
-http://purl.org/ontology/mo/	mo	Membership
-http://purl.org/ontology/mo/	mo	ReleaseType
-http://purl.org/ontology/mo/	mo	Conductor
-http://purl.org/ontology/mo/	mo	DVDA
-http://purl.org/ontology/mo/	mo	Medium
-http://purl.org/ontology/mo/	mo	Stream
-http://purl.org/ontology/mo/	mo	ReleaseEvent
-http://purl.org/ontology/mo/	mo	MagneticTape
-http://purl.org/ontology/mo/	mo	Label
-http://purl.org/ontology/mo/	mo	Libretto
-http://purl.org/ontology/mo/	mo	MusicGroup
-http://purl.org/ontology/mo/	mo	Sound
-http://purl.org/ontology/mo/	mo	Listener
-http://purl.org/ontology/mo/	mo	AudioFile
-http://purl.org/ontology/mo/	mo	CorporateBody
-http://purl.org/ontology/mo/	mo	Genre
-http://purl.org/ontology/mo/	mo	RecordingSession
-http://purl.org/ontology/mo/	mo	Signal
-http://purl.org/ontology/mo/	mo	Release
-http://purl.org/ontology/mo/	mo	Festival
-http://purl.org/ontology/mo/	mo	Torrent
-http://purl.org/ontology/mo/	mo	Record
-http://purl.org/ontology/mo/	mo	ED2K
-http://purl.org/ontology/mo/	mo	MusicalManifestation
-http://purl.org/ontology/mo/	mo	Instrument
-http://purl.org/ontology/mo/	mo	Track
-http://purl.org/ontology/mo/	mo	Transcription
-http://purl.org/ontology/mo/	mo	Recording
-http://purl.org/ontology/mo/	mo	Movement
-http://purl.org/ontology/mo/	mo	DigitalSignal
-http://purl.org/ontology/mo/	mo	Orchestration
-http://purl.org/ontology/mo/	mo	CD
-http://purl.org/ontology/mo/	mo	Composer
-http://purl.org/ontology/mo/	mo	MD
-http://purl.org/ontology/mo/	mo	PublishedLyrics
-http://purl.org/ontology/mo/	mo	Performance
-http://purl.org/ontology/mo/	mo	SoloMusicArtist
-http://purl.org/ontology/mo/	mo	SACD
-http://purl.org/ontology/mo/	mo	Lyrics
-http://purl.org/ontology/mo/	mo	Show
-http://www.w3.org/ns/org#	org	organization
-http://www.w3.org/ns/org#	org	reportsTo
-http://www.w3.org/ns/org#	org	remuneration
-http://www.w3.org/ns/org#	org	transitiveSubOrganizationOf
-http://www.w3.org/ns/org#	org	headOf
-http://www.w3.org/ns/org#	org	memberDuring
-http://www.w3.org/ns/org#	org	purpose
-http://www.w3.org/ns/org#	org	siteAddress
-http://www.w3.org/ns/org#	org	hasUnit
-http://www.w3.org/ns/org#	org	hasMembership
-http://www.w3.org/ns/org#	org	hasRegisteredSite
-http://www.w3.org/ns/org#	org	role
-http://www.w3.org/ns/org#	org	member
-http://www.w3.org/ns/org#	org	hasMember
-http://www.w3.org/ns/org#	org	originalOrganization
-http://www.w3.org/ns/org#	org	hasSite
-http://www.w3.org/ns/org#	org	basedAt
-http://www.w3.org/ns/org#	org	resultingOrganization
-http://www.w3.org/ns/org#	org	roleProperty
-http://www.w3.org/ns/org#	org	siteOf
-http://www.w3.org/ns/org#	org	memberOf
-http://www.w3.org/ns/org#	org	subOrganizationOf
-http://www.w3.org/ns/org#	org	resultedFrom
-http://www.w3.org/ns/org#	org	classification
-http://www.w3.org/ns/org#	org	linkedTo
-http://www.w3.org/ns/org#	org	changedBy
-http://www.w3.org/ns/org#	org	hasSubOrganization
-http://www.w3.org/ns/org#	org	unitOf
-http://www.w3.org/ns/org#	org	hasPrimarySite
-http://www.w3.org/ns/org#	org	identifier
-http://www.w3.org/ns/org#	org	OrganizationalCollaboration
-http://www.w3.org/ns/org#	org	Membership
-http://www.w3.org/ns/org#	org	Role
-http://www.w3.org/ns/org#	org	Site
-http://www.w3.org/ns/org#	org	FormalOrganization
-http://www.w3.org/ns/org#	org	ChangeEvent
-http://www.w3.org/ns/org#	org	OrganizationalUnit
-http://www.w3.org/ns/org#	org	Organization
-http://www.w3.org/2002/07/owl#	owl	disjointUnionOf
-http://www.w3.org/2002/07/owl#	owl	annotatedSource
-http://www.w3.org/2002/07/owl#	owl	hasValue
-http://www.w3.org/2002/07/owl#	owl	cardinality
-http://www.w3.org/2002/07/owl#	owl	maxCardinality
-http://www.w3.org/2002/07/owl#	owl	propertyChainAxiom
-http://www.w3.org/2002/07/owl#	owl	unionOf
-http://www.w3.org/2002/07/owl#	owl	datatypeComplementOf
-http://www.w3.org/2002/07/owl#	owl	equivalentClass
-http://www.w3.org/2002/07/owl#	owl	distinctMembers
-http://www.w3.org/2002/07/owl#	owl	propertyDisjointWith
-http://www.w3.org/2002/07/owl#	owl	onDataRange
-http://www.w3.org/2002/07/owl#	owl	onClass
-http://www.w3.org/2002/07/owl#	owl	targetIndividual
-http://www.w3.org/2002/07/owl#	owl	inverseOf
-http://www.w3.org/2002/07/owl#	owl	members
-http://www.w3.org/2002/07/owl#	owl	hasSelf
-http://www.w3.org/2002/07/owl#	owl	hasKey
-http://www.w3.org/2002/07/owl#	owl	oneOf
-http://www.w3.org/2002/07/owl#	owl	onDatatype
-http://www.w3.org/2002/07/owl#	owl	sourceIndividual
-http://www.w3.org/2002/07/owl#	owl	complementOf
-http://www.w3.org/2002/07/owl#	owl	annotatedProperty
-http://www.w3.org/2002/07/owl#	owl	equivalentProperty
-http://www.w3.org/2002/07/owl#	owl	disjointWith
-http://www.w3.org/2002/07/owl#	owl	annotatedTarget
-http://www.w3.org/2002/07/owl#	owl	onProperties
-http://www.w3.org/2002/07/owl#	owl	minQualifiedCardinality
-http://www.w3.org/2002/07/owl#	owl	targetValue
-http://www.w3.org/2002/07/owl#	owl	withRestrictions
-http://www.w3.org/2002/07/owl#	owl	someValuesFrom
-http://www.w3.org/2002/07/owl#	owl	qualifiedCardinality
-http://www.w3.org/2002/07/owl#	owl	onProperty
-http://www.w3.org/2002/07/owl#	owl	intersectionOf
-http://www.w3.org/2002/07/owl#	owl	differentFrom
-http://www.w3.org/2002/07/owl#	owl	minCardinality
-http://www.w3.org/2002/07/owl#	owl	maxQualifiedCardinality
-http://www.w3.org/2002/07/owl#	owl	sameAs
-http://www.w3.org/2002/07/owl#	owl	allValuesFrom
-http://www.w3.org/2002/07/owl#	owl	assertionProperty
-http://www.w3.org/2002/07/owl#	owl	bottomDataProperty
-http://www.w3.org/2002/07/owl#	owl	topDataProperty
-http://www.w3.org/2002/07/owl#	owl	topObjectProperty
-http://www.w3.org/2002/07/owl#	owl	bottomObjectProperty
-http://www.w3.org/2002/07/owl#	owl	Nothing
-http://www.w3.org/2002/07/owl#	owl	Thing
-http://www.w3.org/2002/07/owl#	owl	IrreflexiveProperty
-http://www.w3.org/2002/07/owl#	owl	FunctionalProperty
-http://www.w3.org/2002/07/owl#	owl	DeprecatedClass
-http://www.w3.org/2002/07/owl#	owl	ObjectProperty
-http://www.w3.org/2002/07/owl#	owl	Axiom
-http://www.w3.org/2002/07/owl#	owl	NegativePropertyAssertion
-http://www.w3.org/2002/07/owl#	owl	Class
-http://www.w3.org/2002/07/owl#	owl	InverseFunctionalProperty
-http://www.w3.org/2002/07/owl#	owl	Annotation
-http://www.w3.org/2002/07/owl#	owl	DatatypeProperty
-http://www.w3.org/2002/07/owl#	owl	SymmetricProperty
-http://www.w3.org/2002/07/owl#	owl	Ontology
-http://www.w3.org/2002/07/owl#	owl	AllDisjointClasses
-http://www.w3.org/2002/07/owl#	owl	TransitiveProperty
-http://www.w3.org/2002/07/owl#	owl	Restriction
-http://www.w3.org/2002/07/owl#	owl	DeprecatedProperty
-http://www.w3.org/2002/07/owl#	owl	ReflexiveProperty
-http://www.w3.org/2002/07/owl#	owl	OntologyProperty
-http://www.w3.org/2002/07/owl#	owl	AllDifferent
-http://www.w3.org/2002/07/owl#	owl	AsymmetricProperty
-http://www.w3.org/2002/07/owl#	owl	NamedIndividual
-http://www.w3.org/2002/07/owl#	owl	AnnotationProperty
-http://www.w3.org/2002/07/owl#	owl	AllDisjointProperties
-http://www.w3.org/2002/07/owl#	owl	DataRange
-http://purl.org/ontology/po/	po	frequency
-http://purl.org/ontology/po/	po	long_synopsis
-http://purl.org/ontology/po/	po	schedule_date
-http://purl.org/ontology/po/	po	medium_synopsis
-http://purl.org/ontology/po/	po	aspect_ratio
-http://purl.org/ontology/po/	po	synopsis
-http://purl.org/ontology/po/	po	position
-http://purl.org/ontology/po/	po	text
-http://purl.org/ontology/po/	po	short_synopsis
-http://purl.org/ontology/po/	po	sound_format
-http://purl.org/ontology/po/	po	duration
-http://purl.org/ontology/po/	po	subtitle_language
-http://purl.org/ontology/po/	po	subject
-http://purl.org/ontology/po/	po	location
-http://purl.org/ontology/po/	po	author
-http://purl.org/ontology/po/	po	track
-http://purl.org/ontology/po/	po	producer
-http://purl.org/ontology/po/	po	genre
-http://purl.org/ontology/po/	po	broadcast_on
-http://purl.org/ontology/po/	po	anchor
-http://purl.org/ontology/po/	po	format
-http://purl.org/ontology/po/	po	clip
-http://purl.org/ontology/po/	po	place
-http://purl.org/ontology/po/	po	broadcaster
-http://purl.org/ontology/po/	po	parent_service
-http://purl.org/ontology/po/	po	director
-http://purl.org/ontology/po/	po	broadcast_of
-http://purl.org/ontology/po/	po	parent_series
-http://purl.org/ontology/po/	po	service
-http://purl.org/ontology/po/	po	person
-http://purl.org/ontology/po/	po	credit
-http://purl.org/ontology/po/	po	category
-http://purl.org/ontology/po/	po	news_reader
-http://purl.org/ontology/po/	po	time
-http://purl.org/ontology/po/	po	commentator
-http://purl.org/ontology/po/	po	masterbrand
-http://purl.org/ontology/po/	po	performer
-http://purl.org/ontology/po/	po	season_broadcast
-http://purl.org/ontology/po/	po	microsite
-http://purl.org/ontology/po/	po	version
-http://purl.org/ontology/po/	po	executive_producer
-http://purl.org/ontology/po/	po	actor
-http://purl.org/ontology/po/	po	channel
-http://purl.org/ontology/po/	po	participant
-http://purl.org/ontology/po/	po	series
-http://purl.org/ontology/po/	po	episode
-http://purl.org/ontology/po/	po	outlet
-http://purl.org/ontology/po/	po	SignedVersion
-http://purl.org/ontology/po/	po	Season
-http://purl.org/ontology/po/	po	Format
-http://purl.org/ontology/po/	po	TV
-http://purl.org/ontology/po/	po	Category
-http://purl.org/ontology/po/	po	NationalRadio
-http://purl.org/ontology/po/	po	Subtitle
-http://purl.org/ontology/po/	po	AudioDescribedVersion
-http://purl.org/ontology/po/	po	FM
-http://purl.org/ontology/po/	po	Brand
-http://purl.org/ontology/po/	po	Series
-http://purl.org/ontology/po/	po	Web
-http://purl.org/ontology/po/	po	OriginalVersion
-http://purl.org/ontology/po/	po	Broadcast
-http://purl.org/ontology/po/	po	ShortenedVersion
-http://purl.org/ontology/po/	po	Clip
-http://purl.org/ontology/po/	po	Genre
-http://purl.org/ontology/po/	po	DVB
-http://purl.org/ontology/po/	po	LocalRadio
-http://purl.org/ontology/po/	po	Version
-http://purl.org/ontology/po/	po	Outlet
-http://purl.org/ontology/po/	po	Episode
-http://purl.org/ontology/po/	po	Place
-http://purl.org/ontology/po/	po	Programme
-http://purl.org/ontology/po/	po	LW
-http://purl.org/ontology/po/	po	DAB
-http://purl.org/ontology/po/	po	Subject
-http://purl.org/ontology/po/	po	Channel
-http://purl.org/ontology/po/	po	Radio
-http://purl.org/ontology/po/	po	FirstBroadcast
-http://purl.org/ontology/po/	po	RepeatBroadcast
-http://purl.org/ontology/po/	po	RegionalRadio
-http://purl.org/ontology/po/	po	IPStream
-http://purl.org/ontology/po/	po	Service
-http://purl.org/ontology/po/	po	Segment
-http://purl.org/ontology/po/	po	Broadcaster
-http://purl.org/ontology/po/	po	ProgrammeItem
-http://purl.org/ontology/po/	po	Person
-http://www.w3.org/1999/02/22-rdf-syntax-ns#	rdf	type
-http://www.w3.org/1999/02/22-rdf-syntax-ns#	rdf	first
-http://www.w3.org/1999/02/22-rdf-syntax-ns#	rdf	rest
-http://www.w3.org/1999/02/22-rdf-syntax-ns#	rdf	predicate
-http://www.w3.org/1999/02/22-rdf-syntax-ns#	rdf	object
-http://www.w3.org/1999/02/22-rdf-syntax-ns#	rdf	subject
-http://www.w3.org/1999/02/22-rdf-syntax-ns#	rdf	value
-http://www.w3.org/1999/02/22-rdf-syntax-ns#	rdf	Statement
-http://www.w3.org/1999/02/22-rdf-syntax-ns#	rdf	Property
-http://www.w3.org/1999/02/22-rdf-syntax-ns#	rdf	Alt
-http://www.w3.org/1999/02/22-rdf-syntax-ns#	rdf	Seq
-http://www.w3.org/1999/02/22-rdf-syntax-ns#	rdf	Bag
-http://www.w3.org/1999/02/22-rdf-syntax-ns#	rdf	List
-http://www.w3.org/2000/01/rdf-schema#	rdfs	domain
-http://www.w3.org/2000/01/rdf-schema#	rdfs	label
-http://www.w3.org/2000/01/rdf-schema#	rdfs	comment
-http://www.w3.org/2000/01/rdf-schema#	rdfs	seeAlso
-http://www.w3.org/2000/01/rdf-schema#	rdfs	range
-http://www.w3.org/2000/01/rdf-schema#	rdfs	subClassOf
-http://www.w3.org/2000/01/rdf-schema#	rdfs	member
-http://www.w3.org/2000/01/rdf-schema#	rdfs	isDefinedBy
-http://www.w3.org/2000/01/rdf-schema#	rdfs	subPropertyOf
-http://www.w3.org/2000/01/rdf-schema#	rdfs	Resource
-http://www.w3.org/2000/01/rdf-schema#	rdfs	Class
-http://www.w3.org/2000/01/rdf-schema#	rdfs	ContainerMembershipProperty
-http://www.w3.org/2000/01/rdf-schema#	rdfs	Literal
-http://www.w3.org/2000/01/rdf-schema#	rdfs	Datatype
-http://www.w3.org/2000/01/rdf-schema#	rdfs	Container
+http://usefulinc.com/ns/doap#	doap	service-endpoint	p,zoo
+http://usefulinc.com/ns/doap#	doap	programming-language	p,zoo
+http://usefulinc.com/ns/doap#	doap	blog	p,zoo
+http://usefulinc.com/ns/doap#	doap	description	p,TODO compare dc:description
+http://usefulinc.com/ns/doap#	doap	platform	p,zoo
+http://usefulinc.com/ns/doap#	doap	category	p,zoo
+http://usefulinc.com/ns/doap#	doap	maintainer	p,zoo
+http://usefulinc.com/ns/doap#	doap	license	p,TODO compare various others
+http://usefulinc.com/ns/doap#	doap	ArchRepository	c,zoo
+http://usefulinc.com/ns/doap#	doap	CVSRepository	c,zoo
+http://usefulinc.com/ns/doap#	doap	BKRepository	c,zoo
+http://usefulinc.com/ns/doap#	doap	Repository	c,zoo
+http://usefulinc.com/ns/doap#	doap	HgRepository	c,zoo
+http://usefulinc.com/ns/doap#	doap	SVNRepository	c,zoo
+http://usefulinc.com/ns/doap#	doap	BazaarBranch	c,zoo
+http://usefulinc.com/ns/doap#	doap	Specification	c,zoo
+http://usefulinc.com/ns/doap#	doap	GitRepository	c,zoo
+http://usefulinc.com/ns/doap#	doap	Version	c,zoo
+http://usefulinc.com/ns/doap#	doap	DarcsRepository	c,zoo
+http://usefulinc.com/ns/doap#	doap	Project	c,defer	Defers to foaf:Project, a superclass.
+http://purl.org/NET/c4dm/event.owl#	ev	literal_factor	p,zoo
+http://purl.org/NET/c4dm/event.owl#	ev	isAgentIn	p,zoo
+http://purl.org/NET/c4dm/event.owl#	ev	time	p,zoo
+http://purl.org/NET/c4dm/event.owl#	ev	producedIn	p,zoo
+http://purl.org/NET/c4dm/event.owl#	ev	place	p,zoo,TODO Investigate; several different uses.
+http://purl.org/NET/c4dm/event.owl#	ev	isFactorOf	p,zoo
+http://purl.org/NET/c4dm/event.owl#	ev	sub_event	p,zoo
+http://purl.org/NET/c4dm/event.owl#	ev	factor	p,zoo
+http://purl.org/NET/c4dm/event.owl#	ev	product	p,zoo
+http://purl.org/NET/c4dm/event.owl#	ev	agent	p,TODO investigate
+http://purl.org/NET/c4dm/event.owl#	ev	Event	p,TODO investigate
+http://purl.org/NET/c4dm/event.owl#	ev	Factor	p,zoo
+http://purl.org/NET/c4dm/event.owl#	ev	Product	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	publications	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	pastProject	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	topic	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	workInfoHomepage	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	depicts	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	skypeID	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	gender	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	fundedBy	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	workplaceHomepage	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	openid	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	page	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	logo	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	mbox	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	schoolHomepage	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	givenName	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	isPrimaryTopicOf	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	depiction	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	currentProject	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	based_near	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	img	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	birthday	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	membershipClass	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	myersBriggs	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	mbox_sha1sum	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	interest	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	focus	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	msnChatID	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	nick	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	holdsAccount	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	plan	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	givenname	p,archaic
+http://xmlns.com/foaf/0.1/	foaf	familyName		p,zoo
+http://xmlns.com/foaf/0.1/	foaf	maker	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	homepage	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	age	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	topic_interest	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	surname	p,archaic
+http://xmlns.com/foaf/0.1/	foaf	geekcode	p,archaic
+http://xmlns.com/foaf/0.1/	foaf	lastName	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	status	p,zoo	todo: check clashes.
+http://xmlns.com/foaf/0.1/	foaf	sha1	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	dnaChecksum	p,archaic
+http://xmlns.com/foaf/0.1/	foaf	family_name	p,archaic
+http://xmlns.com/foaf/0.1/	foaf	accountServiceHomepage	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	firstName	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	icqChatID	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	theme	p,archaic
+http://xmlns.com/foaf/0.1/	foaf	title	p,defer	Use dc:title; for this we could alias as ...prefix?
+http://xmlns.com/foaf/0.1/	foaf	name	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	weblog	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	primaryTopic	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	aimChatID	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	phone	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	jabberID	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	account	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	tipjar	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	member	p,zoo	Noting clash with org:, and mo:'s subprop of same name.
+http://xmlns.com/foaf/0.1/	foaf	thumbnail	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	accountName	p,zoo	Not sure this was ever needed. Todo - investigate.
+http://xmlns.com/foaf/0.1/	foaf	knows	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	made	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	yahooChatID	p,zoo
+http://xmlns.com/foaf/0.1/	foaf	OnlineEcommerceAccount	c,archaic	Is this ever used?
+http://xmlns.com/foaf/0.1/	foaf	OnlineAccount	c,zoo
+http://xmlns.com/foaf/0.1/	foaf	Person	c,zoo
+http://xmlns.com/foaf/0.1/	foaf	OnlineGamingAccount	c,TODO investigate
+http://xmlns.com/foaf/0.1/	foaf	Image	c,zoo
+http://xmlns.com/foaf/0.1/	foaf	LabelProperty	c,zoo
+http://xmlns.com/foaf/0.1/	foaf	OnlineChatAccount	c,zoo
+http://xmlns.com/foaf/0.1/	foaf	Organization	c,zoo
+http://xmlns.com/foaf/0.1/	foaf	Agent	c,zoo
+http://xmlns.com/foaf/0.1/	foaf	PersonalProfileDocument	c,zoo
+http://xmlns.com/foaf/0.1/	foaf	Project	c,zoo
+http://xmlns.com/foaf/0.1/	foaf	Document	c,zoo
+http://xmlns.com/foaf/0.1/	foaf	Group	c,zoo
+http://www.w3.org/2003/01/geo/wgs84_pos#	geo	location	p,zoo
+http://www.w3.org/2003/01/geo/wgs84_pos#	geo	lat_long	p,zoo
+http://www.w3.org/2003/01/geo/wgs84_pos#	geo	lat	p,zoo
+http://www.w3.org/2003/01/geo/wgs84_pos#	geo	alt	p,zoo
+http://www.w3.org/2003/01/geo/wgs84_pos#	geo	long	p,zoo
+http://www.w3.org/2003/01/geo/wgs84_pos#	geo	Point	p,zoo
+http://www.w3.org/2003/01/geo/wgs84_pos#	geo	SpatialThing	c,zoo
+http://www.geonames.org/ontology#	geonames	population	p,zoo
+http://www.geonames.org/ontology#	geonames	officialName	p,zoo
+http://www.geonames.org/ontology#	geonames	postalCode	p,zoo
+http://www.geonames.org/ontology#	geonames	shortName	p,zoo
+http://www.geonames.org/ontology#	geonames	countryCode	p,zoo
+http://www.geonames.org/ontology#	geonames	name	p,defer,TODO Check using foaf:name works here.
+http://www.geonames.org/ontology#	geonames	nearby	p,zoo
+http://www.geonames.org/ontology#	geonames	wikipediaArticle	p,zoo
+http://www.geonames.org/ontology#	geonames	parentADM3	p,zoo
+http://www.geonames.org/ontology#	geonames	featureClass	p,zoo
+http://www.geonames.org/ontology#	geonames	locationMap	p,zoo
+http://www.geonames.org/ontology#	geonames	parentADM2	p,zoo
+http://www.geonames.org/ontology#	geonames	parentCountry	p,zoo
+http://www.geonames.org/ontology#	geonames	parentADM1	p,zoo
+http://www.geonames.org/ontology#	geonames	neighbour	p,zoo
+http://www.geonames.org/ontology#	geonames	featureCode	p,zoo
+http://www.geonames.org/ontology#	geonames	neighbouringFeatures	p,zoo
+http://www.geonames.org/ontology#	geonames	parentFeature	p,zoo
+http://www.geonames.org/ontology#	geonames	nearbyFeatures	p,zoo
+http://www.geonames.org/ontology#	geonames	childrenFeatures	p,zoo
+http://www.geonames.org/ontology#	geonames	parentADM4	p,zoo
+http://www.geonames.org/ontology#	geonames	locatedIn	p,zoo
+http://www.geonames.org/ontology#	geonames	RDFData	c,zoo
+http://www.geonames.org/ontology#	geonames	Map	c,zoo
+http://www.geonames.org/ontology#	geonames	Feature	c,zoo
+http://www.geonames.org/ontology#	geonames	WikipediaArticle	c,zoo
+http://www.geonames.org/ontology#	geonames	Class	c,defer	Clash with rdfs and owl class. Unfortunate. Investigate.
+http://www.geonames.org/ontology#	geonames	Code	c,zoo
+http://purl.org/goodrelations/v1#	gr	hasMaxCurrencyValue	p,zoo
+http://purl.org/goodrelations/v1#	gr	hasStockKeepingUnit	p,zoo
+http://purl.org/goodrelations/v1#	gr	hasMaxValueInteger	p,zoo
+http://purl.org/goodrelations/v1#	gr	description	p,TODO Check dc:description is ok.
+http://purl.org/goodrelations/v1#	gr	serialNumber	p,zoo
+http://purl.org/goodrelations/v1#	gr	hasValueFloat	p,zoo
+http://purl.org/goodrelations/v1#	gr	validFrom	p,zoo
+http://purl.org/goodrelations/v1#	gr	hasCurrency	p,zoo
+http://purl.org/goodrelations/v1#	gr	availabilityStarts	p,zoo
+http://purl.org/goodrelations/v1#	gr	datatypeProductOrServiceProperty	p,zoo
+http://purl.org/goodrelations/v1#	gr	hasValueInteger	p,zoo
+http://purl.org/goodrelations/v1#	gr	hasMaxValueFloat	p,zoo
+http://purl.org/goodrelations/v1#	gr	hasMinValueFloat	p,zoo
+http://purl.org/goodrelations/v1#	gr	hasNAICS	p,zoo
+http://purl.org/goodrelations/v1#	gr	isListPrice	p,zoo
+http://purl.org/goodrelations/v1#	gr	hasDUNS	p,zoo
+http://purl.org/goodrelations/v1#	gr	hasGTIN-14	p,zoo
+http://purl.org/goodrelations/v1#	gr	valueAddedTaxIncluded	p,zoo
+http://purl.org/goodrelations/v1#	gr	hasGlobalLocationNumber	p,zoo
+http://purl.org/goodrelations/v1#	gr	hasMinValueInteger	p,zoo
+http://purl.org/goodrelations/v1#	gr	hasMPN	p,zoo
+http://purl.org/goodrelations/v1#	gr	validThrough	p,zoo
+http://purl.org/goodrelations/v1#	gr	category	p,TODO DOAP,GR,PO,vCard all use this :( can we converge on skos at least?
+http://purl.org/goodrelations/v1#	gr	durationOfWarrantyInMonths	p,zoo
+http://purl.org/goodrelations/v1#	gr	hasCurrencyValue	p,zoo
+http://purl.org/goodrelations/v1#	gr	availabilityEnds	p,zoo
+http://purl.org/goodrelations/v1#	gr	closes	p,zoo
+http://purl.org/goodrelations/v1#	gr	hasGTIN-8	p,zoo
+http://purl.org/goodrelations/v1#	gr	hasMinCurrencyValue	p,zoo
+http://purl.org/goodrelations/v1#	gr	eligibleRegions	p,zoo
+http://purl.org/goodrelations/v1#	gr	hasISICv4	p,zoo
+http://purl.org/goodrelations/v1#	gr	legalName	p,zoo
+http://purl.org/goodrelations/v1#	gr	amountOfThisGood	p,zoo
+http://purl.org/goodrelations/v1#	gr	hasEAN_UCC-13	p,zoo
+http://purl.org/goodrelations/v1#	gr	hasMinValue	p,zoo
+http://purl.org/goodrelations/v1#	gr	condition	p,zoo
+http://purl.org/goodrelations/v1#	gr	color	p,zoo
+http://purl.org/goodrelations/v1#	gr	name	p,TODO Check foaf:name is ok.
+http://purl.org/goodrelations/v1#	gr	hasValue	p,zoo,TODO Clash with OWL's hasValue. Investigate.
+http://purl.org/goodrelations/v1#	gr	opens	p,zoo
+http://purl.org/goodrelations/v1#	gr	hasMaxValue	p,zoo
+http://purl.org/goodrelations/v1#	gr	billingIncrement	p,zoo
+http://purl.org/goodrelations/v1#	gr	priceType	p,zoo
+http://purl.org/goodrelations/v1#	gr	hasUnitOfMeasurement	p,zoo
+http://purl.org/goodrelations/v1#	gr	isVariantOf	p,zoo
+http://purl.org/goodrelations/v1#	gr	equal	p,zoo
+http://purl.org/goodrelations/v1#	gr	hasBrand	p,zoo
+http://purl.org/goodrelations/v1#	gr	lesser	p,zoo
+http://purl.org/goodrelations/v1#	gr	hasNext	p,zoo
+http://purl.org/goodrelations/v1#	gr	includesObject	p,zoo
+http://purl.org/goodrelations/v1#	gr	isSimilarTo	p,zoo
+http://purl.org/goodrelations/v1#	gr	valueReference	p,zoo
+http://purl.org/goodrelations/v1#	gr	offers	p,zoo
+http://purl.org/goodrelations/v1#	gr	acceptedPaymentMethods	p,zoo
+http://purl.org/goodrelations/v1#	gr	depth	p,zoo
+http://purl.org/goodrelations/v1#	gr	appliesToPaymentMethod	p,zoo
+http://purl.org/goodrelations/v1#	gr	addOn	p,zoo
+http://purl.org/goodrelations/v1#	gr	hasPrevious	p,zoo
+http://purl.org/goodrelations/v1#	gr	hasPriceSpecification	p,zoo
+http://purl.org/goodrelations/v1#	gr	qualitativeProductOrServiceProperty	p,zoo
+http://purl.org/goodrelations/v1#	gr	typeOfGood	p,zoo
+http://purl.org/goodrelations/v1#	gr	hasMakeAndModel	p,zoo
+http://purl.org/goodrelations/v1#	gr	appliesToDeliveryMethod	p,zoo
+http://purl.org/goodrelations/v1#	gr	availableAtOrFrom	p,zoo
+http://purl.org/goodrelations/v1#	gr	eligibleDuration	p,zoo
+http://purl.org/goodrelations/v1#	gr	advanceBookingRequirement	p,zoo
+http://purl.org/goodrelations/v1#	gr	greater	p,zoo
+http://purl.org/goodrelations/v1#	gr	lesserOrEqual	p,zoo
+http://purl.org/goodrelations/v1#	gr	quantitativeProductOrServiceProperty	p,zoo
+http://purl.org/goodrelations/v1#	gr	hasOpeningHoursSpecification	p,zoo
+http://purl.org/goodrelations/v1#	gr	hasBusinessFunction	p,zoo
+http://purl.org/goodrelations/v1#	gr	successorOf	p,zoo
+http://purl.org/goodrelations/v1#	gr	hasInventoryLevel	p,zoo
+http://purl.org/goodrelations/v1#	gr	eligibleCustomerTypes	p,zoo
+http://purl.org/goodrelations/v1#	gr	hasWarrantyScope	p,zoo
+http://purl.org/goodrelations/v1#	gr	deliveryLeadTime	p,zoo
+http://purl.org/goodrelations/v1#	gr	owns	p,zoo
+http://purl.org/goodrelations/v1#	gr	includes	p,zoo
+http://purl.org/goodrelations/v1#	gr	hasPOS	p,zoo
+http://purl.org/goodrelations/v1#	gr	hasEligibleQuantity	p,zoo
+http://purl.org/goodrelations/v1#	gr	isAccessoryOrSparePartFor	p,zoo
+http://purl.org/goodrelations/v1#	gr	hasManufacturer	p,zoo
+http://purl.org/goodrelations/v1#	gr	eligibleTransactionVolume	p,zoo
+http://purl.org/goodrelations/v1#	gr	predecessorOf	p,zoo
+http://purl.org/goodrelations/v1#	gr	hasOpeningHoursDayOfWeek	p,zoo
+http://purl.org/goodrelations/v1#	gr	weight	p,zoo
+http://purl.org/goodrelations/v1#	gr	greaterOrEqual	p,zoo
+http://purl.org/goodrelations/v1#	gr	height	p,zoo
+http://purl.org/goodrelations/v1#	gr	hasWarrantyPromise	p,zoo
+http://purl.org/goodrelations/v1#	gr	seeks	p,zoo
+http://purl.org/goodrelations/v1#	gr	nonEqual	p,zoo
+http://purl.org/goodrelations/v1#	gr	width	p,zoo
+http://purl.org/goodrelations/v1#	gr	availableDeliveryMethods	p,zoo
+http://purl.org/goodrelations/v1#	gr	isConsumableFor	p,zoo
+http://purl.org/goodrelations/v1#	gr	Individual	c,zoo
+http://purl.org/goodrelations/v1#	gr	QuantitativeValue	c,zoo
+http://purl.org/goodrelations/v1#	gr	PaymentMethod	c,zoo
+http://purl.org/goodrelations/v1#	gr	DayOfWeek	c,zoo
+http://purl.org/goodrelations/v1#	gr	N-Ary-Relations	c,zoo
+http://purl.org/goodrelations/v1#	gr	DeliveryMethod	c,zoo
+http://purl.org/goodrelations/v1#	gr	QualitativeValue	c,zoo
+http://purl.org/goodrelations/v1#	gr	ActualProductOrServiceInstance	c,zoo
+http://purl.org/goodrelations/v1#	gr	DeliveryModeParcelService	c,zoo
+http://purl.org/goodrelations/v1#	gr	OpeningHoursSpecification	c,zoo
+http://purl.org/goodrelations/v1#	gr	WarrantyPromise	c,zoo
+http://purl.org/goodrelations/v1#	gr	DeliveryChargeSpecification	c,zoo
+http://purl.org/goodrelations/v1#	gr	QuantitativeValueFloat	c,zoo
+http://purl.org/goodrelations/v1#	gr	BusinessEntityType	c,zoo
+http://purl.org/goodrelations/v1#	gr	BusinessFunction	c,zoo
+http://purl.org/goodrelations/v1#	gr	SomeItems	c,zoo
+http://purl.org/goodrelations/v1#	gr	ProductOrServiceModel	c,zoo
+http://purl.org/goodrelations/v1#	gr	BusinessEntity	c,zoo
+http://purl.org/goodrelations/v1#	gr	QuantitativeValueInteger	c,zoo
+http://purl.org/goodrelations/v1#	gr	LocationOfSalesOrServiceProvisioning	c,zoo
+http://purl.org/goodrelations/v1#	gr	PriceSpecification	c,zoo
+http://purl.org/goodrelations/v1#	gr	UnitPriceSpecification	c,zoo
+http://purl.org/goodrelations/v1#	gr	Location	c,todo,defer	Ok to defer to dcterms:Location?
+http://purl.org/goodrelations/v1#	gr	WarrantyScope	c,zoo
+http://purl.org/goodrelations/v1#	gr	Brand	c,zoo
+http://purl.org/goodrelations/v1#	gr	PaymentChargeSpecification	c,zoo
+http://purl.org/goodrelations/v1#	gr	PaymentMethodCreditCard	c,zoo
+http://purl.org/goodrelations/v1#	gr	ProductOrService	c,zoo
+http://purl.org/goodrelations/v1#	gr	ProductOrServicesSomeInstancesPlaceholder	c,zoo
+http://purl.org/goodrelations/v1#	gr	Offering	c,zoo
+http://purl.org/goodrelations/v1#	gr	TypeAndQuantityNode	c,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	requestStatus	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	contact	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	repeat	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	X-	p,zoo,TODO Is this a class?
+http://www.w3.org/2002/12/cal/ical#	ical	class	p,TODO clash with RDFS and OWL
+http://www.w3.org/2002/12/cal/ical#	ical	uid	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	action	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	priority	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	sequence	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	location	todo
+http://www.w3.org/2002/12/cal/ical#	ical	tzoffsetfrom	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	comment	p,TODO Clash with RDFS
+http://www.w3.org/2002/12/cal/ical#	ical	percentComplete	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	status	p,TODO Clash with foaf:status. Can they share?
+http://www.w3.org/2002/12/cal/ical#	ical	description	p,defer	dc:description ok?
+http://www.w3.org/2002/12/cal/ical#	ical	method	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	version	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	summary	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	tzname	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	categories	p,zoo,TODO Compare the various category properties.
+http://www.w3.org/2002/12/cal/ical#	ical	resources	p,zoo,TODO	What does this mean?
+http://www.w3.org/2002/12/cal/ical#	ical	tzid	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	tzoffsetto	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	relatedTo	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	prodid	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	calscale	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	transp	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	rdate	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	trigger	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	completed	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	dtend	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	geo	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	exdate	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	recurrenceId	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	organizer	p,todo,defer	bibo:organizer - similar/same meaning?
+http://www.w3.org/2002/12/cal/ical#	ical	exrule	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	duration	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	attendee	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	lastModified	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	freebusy	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	due	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	rrule	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	dtstart	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	attach	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	dtstamp	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	url	p,zoo,TODO Check other properties like this.
+http://www.w3.org/2002/12/cal/ical#	ical	tzurl	p,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	created	p,todo,defer	defer to dc:terms, also doap, sioc.
+http://www.w3.org/2002/12/cal/ical#	ical	Valarm	c,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	Vevent	c,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	Vfreebusy	c,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	Vjournal	c,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	Vtodo	c,zoo
+http://www.w3.org/2002/12/cal/ical#	ical	Vtimezone	c,zoo
+http://purl.org/ontology/mo/	mo	tempo	p,zoo
+http://purl.org/ontology/mo/	mo	track_count	p,zoo
+http://purl.org/ontology/mo/	mo	movement_number	p,zoo
+http://purl.org/ontology/mo/	mo	track_number	p,zoo
+http://purl.org/ontology/mo/	mo	record_side	p,zoo
+http://purl.org/ontology/mo/	mo	upc	p,zoo
+http://purl.org/ontology/mo/	mo	musicbrainz_guid	p,zoo
+http://purl.org/ontology/mo/	mo	activity_end	p,zoo
+http://purl.org/ontology/mo/	mo	meter	p,zoo
+http://purl.org/ontology/mo/	mo	trmid	p,zoo
+http://purl.org/ontology/mo/	mo	record_number	p,zoo
+http://purl.org/ontology/mo/	mo	bpm	p,zoo
+http://purl.org/ontology/mo/	mo	opus	p,zoo
+http://purl.org/ontology/mo/	mo	catalogue_number	p,zoo
+http://purl.org/ontology/mo/	mo	ipi	p,zoo
+http://purl.org/ontology/mo/	mo	ismn	p,zoo
+http://purl.org/ontology/mo/	mo	record_count	p,zoo
+http://purl.org/ontology/mo/	mo	puid	p,zoo
+http://purl.org/ontology/mo/	mo	iswc	p,zoo
+http://purl.org/ontology/mo/	mo	ean	p,zoo
+http://purl.org/ontology/mo/	mo	encoding	p,zoo
+http://purl.org/ontology/mo/	mo	grid	p,zoo
+http://purl.org/ontology/mo/	mo	text	p,zoo
+http://purl.org/ontology/mo/	mo	isrc	p,zoo
+http://purl.org/ontology/mo/	mo	lc	p,zoo
+http://purl.org/ontology/mo/	mo	activity_start	p,zoo
+http://purl.org/ontology/mo/	mo	gtin	p,zoo
+http://purl.org/ontology/mo/	mo	uuid	p,zoo
+http://purl.org/ontology/mo/	mo	onlinecommunity	p,zoo
+http://purl.org/ontology/mo/	mo	fanpage	p,zoo
+http://purl.org/ontology/mo/	mo	published	p,zoo
+http://purl.org/ontology/mo/	mo	possess_item	p,zoo
+http://purl.org/ontology/mo/	mo	sampled	p,zoo
+http://purl.org/ontology/mo/	mo	member	p,defer	Defers to foaf:member, a superproperty.
+http://purl.org/ontology/mo/	mo	movement	p,zoo
+http://purl.org/ontology/mo/	mo	sampled_version	p,zoo
+http://purl.org/ontology/mo/	mo	paid_download	p,zoo
+http://purl.org/ontology/mo/	mo	produced_score	p,zoo
+http://purl.org/ontology/mo/	mo	exchange_item	p,zoo
+http://purl.org/ontology/mo/	mo	release	p,TODO CLASH with doap:release. Investigate w/ edd, yvesr
+http://purl.org/ontology/mo/	mo	producer	p,zoo	Clashes with po: and bibo:, Investigate.
+http://purl.org/ontology/mo/	mo	produced_sound	p,zoo
+http://purl.org/ontology/mo/	mo	performed	p,zoo
+http://purl.org/ontology/mo/	mo	signal	p,zoo	p,zoo
+http://purl.org/ontology/mo/	mo	wikipedia	p,zoo
+http://purl.org/ontology/mo/	mo	amazon_asin	p,zoo
+http://purl.org/ontology/mo/	mo	listened	p,zoo
+http://purl.org/ontology/mo/	mo	produced	p,zoo
+http://purl.org/ontology/mo/	mo	arrangement_of	p,zoo
+http://purl.org/ontology/mo/	mo	published_as	p,zoo
+http://purl.org/ontology/mo/	mo	member_of	p,zoo
+http://purl.org/ontology/mo/	mo	publication_of	p,zoo
+http://purl.org/ontology/mo/	mo	remixed	p,zoo
+http://purl.org/ontology/mo/	mo	compilation_of	p,zoo
+http://purl.org/ontology/mo/	mo	lyrics	p,zoo
+http://purl.org/ontology/mo/	mo	musicmoz	p,zoo
+http://purl.org/ontology/mo/	mo	origin	p,zoo
+http://purl.org/ontology/mo/	mo	musicbrainz	p,zoo
+http://purl.org/ontology/mo/	mo	track	p,zoo
+http://purl.org/ontology/mo/	mo	event_homepage	p,zoo
+http://purl.org/ontology/mo/	mo	djmixed_by	p,zoo
+http://purl.org/ontology/mo/	mo	recorded_as	p,zoo
+http://purl.org/ontology/mo/	mo	remaster_of	p,zoo
+http://purl.org/ontology/mo/	mo	mailorder	p,zoo
+http://purl.org/ontology/mo/	mo	recorded_in	p,zoo
+http://purl.org/ontology/mo/	mo	review	p,zoo
+http://purl.org/ontology/mo/	mo	compiler	p,zoo
+http://purl.org/ontology/mo/	mo	derived_from	p,zoo
+http://purl.org/ontology/mo/	mo	primary_instrument	p,zoo
+http://purl.org/ontology/mo/	mo	medley_of	p,zoo
+http://purl.org/ontology/mo/	mo	engineered	p,zoo
+http://purl.org/ontology/mo/	mo	composer	p,zoo
+http://purl.org/ontology/mo/	mo	olga	p,zoo
+http://purl.org/ontology/mo/	mo	group	p,zoo
+http://purl.org/ontology/mo/	mo	interpreter	p,zoo
+http://purl.org/ontology/mo/	mo	licence	p,zoo
+http://purl.org/ontology/mo/	mo	homepage	p,todo,defer	Defer to foaf:homepage. Todo: confirm semantics match.
+http://purl.org/ontology/mo/	mo	produced_signal_group	p,zoo
+http://purl.org/ontology/mo/	mo	image	p,zoo	Common name, check how general purpose this is.
+http://purl.org/ontology/mo/	mo	contains_sample_from	p,zoo
+http://purl.org/ontology/mo/	mo	sampled_version_of	p,zoo
+http://purl.org/ontology/mo/	mo	discography	p,zoo
+http://purl.org/ontology/mo/	mo	download	p,zoo	Overlap w/ DOAP?
+http://purl.org/ontology/mo/	mo	encodes	p,zoo
+http://purl.org/ontology/mo/	mo	conducted	p,zoo
+http://purl.org/ontology/mo/	mo	other_release_of	p,zoo
+http://purl.org/ontology/mo/	mo	label	p,todo,defer	RDFS label.
+http://purl.org/ontology/mo/	mo	genre	p,zoo
+http://purl.org/ontology/mo/	mo	want_item	p,zoo
+http://purl.org/ontology/mo/	mo	produced_signal	p,zoo
+http://purl.org/ontology/mo/	mo	mashup_of	p,zoo
+http://purl.org/ontology/mo/	mo	record	p,zoo
+http://purl.org/ontology/mo/	mo	sampler	p,zoo
+http://purl.org/ontology/mo/	mo	sell_item	p,zoo
+http://purl.org/ontology/mo/	mo	arranged_in	p,zoo
+http://purl.org/ontology/mo/	mo	free_download	p,zoo
+http://purl.org/ontology/mo/	mo	media_type	p,zoo
+http://purl.org/ontology/mo/	mo	djmix_of	p,zoo
+http://purl.org/ontology/mo/	mo	membership	p,zoo
+http://purl.org/ontology/mo/	mo	tribute_to	p,zoo
+http://purl.org/ontology/mo/	mo	biography	p,defer,todo	Defer to bio:biography. Equiv meanings?
+http://purl.org/ontology/mo/	mo	remix_of	p,zoo
+http://purl.org/ontology/mo/	mo	headliner	p,zoo
+http://purl.org/ontology/mo/	mo	myspace	p,zoo
+http://purl.org/ontology/mo/	mo	performed_in	p,zoo
+http://purl.org/ontology/mo/	mo	composed_in	p,zoo
+http://purl.org/ontology/mo/	mo	key	p,zoo
+http://purl.org/ontology/mo/	mo	translation_of	p,zoo
+http://purl.org/ontology/mo/	mo	remixer	p,zoo
+http://purl.org/ontology/mo/	mo	imdb	p,zoo
+http://purl.org/ontology/mo/	mo	records	p,zoo
+http://purl.org/ontology/mo/	mo	djmixed	p,zoo
+http://purl.org/ontology/mo/	mo	produced_work	p,zoo
+http://purl.org/ontology/mo/	mo	supporting_musician	p,zoo
+http://purl.org/ontology/mo/	mo	performance_of	p,zoo
+http://purl.org/ontology/mo/	mo	preview_download	p,zoo
+http://purl.org/ontology/mo/	mo	recording_of	p,zoo
+http://purl.org/ontology/mo/	mo	collaborated_with	p,zoo
+http://purl.org/ontology/mo/	mo	similar_to	p,zoo
+http://purl.org/ontology/mo/	mo	compiled	p,zoo
+http://purl.org/ontology/mo/	mo	discogs	p,zoo
+http://purl.org/ontology/mo/	mo	publishing_location	p,zoo
+http://purl.org/ontology/mo/	mo	publisher	p,defer,TODO Defers to dcterms:publisher. Equiv meanings?
+http://purl.org/ontology/mo/	mo	time	p,defer,TODO Investigate.	
+http://purl.org/ontology/mo/	mo	Arrangement	c,zoo
+http://purl.org/ontology/mo/	mo	ReleaseStatus	c,zoo
+http://purl.org/ontology/mo/	mo	Score	c,zoo
+http://purl.org/ontology/mo/	mo	SoundEngineer	c,zoo
+http://purl.org/ontology/mo/	mo	Composition	c,zoo
+http://purl.org/ontology/mo/	mo	MusicalWork	c,zoo
+http://purl.org/ontology/mo/	mo	MusicalExpression	c,zoo
+http://purl.org/ontology/mo/	mo	PublishedScore	c,zoo
+http://purl.org/ontology/mo/	mo	SignalGroup	c,zoo
+http://purl.org/ontology/mo/	mo	AnalogSignal	c,zoo
+http://purl.org/ontology/mo/	mo	Performer	c,zoo
+http://purl.org/ontology/mo/	mo	DCC	c,zoo
+http://purl.org/ontology/mo/	mo	PublishedLibretto	c,zoo
+http://purl.org/ontology/mo/	mo	MusicalItem	c,zoo
+http://purl.org/ontology/mo/	mo	DAT	c,zoo
+http://purl.org/ontology/mo/	mo	Vinyl	c,zoo
+http://purl.org/ontology/mo/	mo	Instrumentation	c,zoo
+http://purl.org/ontology/mo/	mo	MusicArtist	c,zoo
+http://purl.org/ontology/mo/	mo	Arranger	c,zoo
+http://purl.org/ontology/mo/	mo	Membership	c,todo,defer	Clash with org:Membership. Deferring to that for now. Investigate.
+http://purl.org/ontology/mo/	mo	ReleaseType	c,zoo
+http://purl.org/ontology/mo/	mo	Conductor	c,zoo
+http://purl.org/ontology/mo/	mo	DVDA	c,zoo
+http://purl.org/ontology/mo/	mo	Medium	c,zoo
+http://purl.org/ontology/mo/	mo	Stream	c,zoo
+http://purl.org/ontology/mo/	mo	ReleaseEvent	c,zoo
+http://purl.org/ontology/mo/	mo	MagneticTape	c,zoo
+http://purl.org/ontology/mo/	mo	Label	c,zoo
+http://purl.org/ontology/mo/	mo	Libretto	c,zoo
+http://purl.org/ontology/mo/	mo	MusicGroup	c,zoo
+http://purl.org/ontology/mo/	mo	Sound	c,zoo
+http://purl.org/ontology/mo/	mo	Listener	c,zoo
+http://purl.org/ontology/mo/	mo	AudioFile	c,zoo
+http://purl.org/ontology/mo/	mo	CorporateBody	c,zoo
+http://purl.org/ontology/mo/	mo	Genre	c,zoo
+http://purl.org/ontology/mo/	mo	RecordingSession	c,zoo
+http://purl.org/ontology/mo/	mo	Signal	c,zoo
+http://purl.org/ontology/mo/	mo	Release	c,zoo
+http://purl.org/ontology/mo/	mo	Festival	c,zoo
+http://purl.org/ontology/mo/	mo	Torrent	c,zoo
+http://purl.org/ontology/mo/	mo	Record	c,zoo
+http://purl.org/ontology/mo/	mo	ED2K	c,zoo
+http://purl.org/ontology/mo/	mo	MusicalManifestation	c,zoo
+http://purl.org/ontology/mo/	mo	Instrument	c,zoo
+http://purl.org/ontology/mo/	mo	Track	c,zoo
+http://purl.org/ontology/mo/	mo	Transcription	c,zoo
+http://purl.org/ontology/mo/	mo	Recording	c,zoo
+http://purl.org/ontology/mo/	mo	Movement	c,zoo
+http://purl.org/ontology/mo/	mo	DigitalSignal	c,zoo
+http://purl.org/ontology/mo/	mo	Orchestration	c,zoo
+http://purl.org/ontology/mo/	mo	CD	c,zoo
+http://purl.org/ontology/mo/	mo	Composer	c,zoo
+http://purl.org/ontology/mo/	mo	MD	c,zoo
+http://purl.org/ontology/mo/	mo	PublishedLyrics	c,zoo
+http://purl.org/ontology/mo/	mo	Performance	c,zoo
+http://purl.org/ontology/mo/	mo	SoloMusicArtist	c,zoo
+http://purl.org/ontology/mo/	mo	SACD	c,zoo
+http://purl.org/ontology/mo/	mo	Lyrics	c,zoo
+http://purl.org/ontology/mo/	mo	Show	c,zoo
+http://www.w3.org/ns/org#	org	organization	p,zoo
+http://www.w3.org/ns/org#	org	reportsTo	p,zoo
+http://www.w3.org/ns/org#	org	remuneration	p,zoo
+http://www.w3.org/ns/org#	org	transitiveSubOrganizationOf	p,zoo
+http://www.w3.org/ns/org#	org	headOf	p,zoo
+http://www.w3.org/ns/org#	org	memberDuring	p,zoo
+http://www.w3.org/ns/org#	org	purpose	p,zoo
+http://www.w3.org/ns/org#	org	siteAddress	p,zoo
+http://www.w3.org/ns/org#	org	hasUnit	p,zoo
+http://www.w3.org/ns/org#	org	hasMembership	p,zoo
+http://www.w3.org/ns/org#	org	hasRegisteredSite	p,zoo
+http://www.w3.org/ns/org#	org	role	p,zoo
+http://www.w3.org/ns/org#	org	member	p,defer	Defers to foaf:member.
+http://www.w3.org/ns/org#	org	hasMember	p,zoo
+http://www.w3.org/ns/org#	org	originalOrganization	p,zoo
+http://www.w3.org/ns/org#	org	hasSite	p,zoo
+http://www.w3.org/ns/org#	org	basedAt	p,zoo
+http://www.w3.org/ns/org#	org	resultingOrganization	p,zoo
+http://www.w3.org/ns/org#	org	roleProperty	p,zoo
+http://www.w3.org/ns/org#	org	siteOf	p,zoo
+http://www.w3.org/ns/org#	org	memberOf	p,zoo
+http://www.w3.org/ns/org#	org	subOrganizationOf	p,zoo
+http://www.w3.org/ns/org#	org	resultedFrom	p,zoo
+http://www.w3.org/ns/org#	org	classification	p,zoo
+http://www.w3.org/ns/org#	org	linkedTo	p,zoo
+http://www.w3.org/ns/org#	org	changedBy	p,zoo
+http://www.w3.org/ns/org#	org	hasSubOrganization	p,zoo
+http://www.w3.org/ns/org#	org	unitOf	p,zoo
+http://www.w3.org/ns/org#	org	hasPrimarySite	p,zoo
+http://www.w3.org/ns/org#	org	identifier	p,defer,todo	Defers to dcterms:identifier. Confirm ok. Is it much used? org:id possible?
+http://www.w3.org/ns/org#	org	OrganizationalCollaboration	c,zoo
+http://www.w3.org/ns/org#	org	Membership	c,zoo	Clashes with mo:, investigate.
+http://www.w3.org/ns/org#	org	Role	c,zoo
+http://www.w3.org/ns/org#	org	Site	c,zoo
+http://www.w3.org/ns/org#	org	FormalOrganization	c,zoo
+http://www.w3.org/ns/org#	org	ChangeEvent	c,zoo
+http://www.w3.org/ns/org#	org	OrganizationalUnit	c,zoo
+http://www.w3.org/ns/org#	org	Organization	c,defer	Defers to FOAF (which it subclasses.).
+http://www.w3.org/2002/07/owl#	owl	disjointUnionOf	p,zoo
+http://www.w3.org/2002/07/owl#	owl	annotatedSource	p,zoo
+http://www.w3.org/2002/07/owl#	owl	hasValue	p,defer,TODO Deferring to gr: as fewer people write ontologies. Investigate impact.
+http://www.w3.org/2002/07/owl#	owl	cardinality	p,zoo
+http://www.w3.org/2002/07/owl#	owl	maxCardinality	p,zoo
+http://www.w3.org/2002/07/owl#	owl	propertyChainAxiom	p,zoo
+http://www.w3.org/2002/07/owl#	owl	unionOf	p,zoo
+http://www.w3.org/2002/07/owl#	owl	datatypeComplementOf	p,zoo
+http://www.w3.org/2002/07/owl#	owl	equivalentClass	p,zoo
+http://www.w3.org/2002/07/owl#	owl	distinctMembers	p,zoo
+http://www.w3.org/2002/07/owl#	owl	propertyDisjointWith	p,zoo
+http://www.w3.org/2002/07/owl#	owl	onDataRange	p,zoo
+http://www.w3.org/2002/07/owl#	owl	onClass	p,zoo
+http://www.w3.org/2002/07/owl#	owl	targetIndividual	p,zoo
+http://www.w3.org/2002/07/owl#	owl	inverseOf	p,zoo
+http://www.w3.org/2002/07/owl#	owl	members	p,zoo
+http://www.w3.org/2002/07/owl#	owl	hasSelf	p,zoo
+http://www.w3.org/2002/07/owl#	owl	hasKey	p,zoo
+http://www.w3.org/2002/07/owl#	owl	oneOf	p,zoo
+http://www.w3.org/2002/07/owl#	owl	onDatatype	p,zoo
+http://www.w3.org/2002/07/owl#	owl	sourceIndividual	p,zoo
+http://www.w3.org/2002/07/owl#	owl	complementOf	p,zoo
+http://www.w3.org/2002/07/owl#	owl	annotatedProperty	p,zoo
+http://www.w3.org/2002/07/owl#	owl	equivalentProperty	p,zoo
+http://www.w3.org/2002/07/owl#	owl	disjointWith	p,zoo
+http://www.w3.org/2002/07/owl#	owl	annotatedTarget	p,zoo
+http://www.w3.org/2002/07/owl#	owl	onProperties	p,zoo
+http://www.w3.org/2002/07/owl#	owl	minQualifiedCardinality	p,zoo
+http://www.w3.org/2002/07/owl#	owl	targetValue	p,zoo
+http://www.w3.org/2002/07/owl#	owl	withRestrictions	p,zoo
+http://www.w3.org/2002/07/owl#	owl	someValuesFrom	p,zoo
+http://www.w3.org/2002/07/owl#	owl	qualifiedCardinality	p,zoo
+http://www.w3.org/2002/07/owl#	owl	onProperty	p,zoo
+http://www.w3.org/2002/07/owl#	owl	intersectionOf	p,zoo
+http://www.w3.org/2002/07/owl#	owl	differentFrom	p,zoo
+http://www.w3.org/2002/07/owl#	owl	minCardinality	p,zoo
+http://www.w3.org/2002/07/owl#	owl	maxQualifiedCardinality	p,zoo
+http://www.w3.org/2002/07/owl#	owl	sameAs	p,zoo
+http://www.w3.org/2002/07/owl#	owl	allValuesFrom	p,zoo
+http://www.w3.org/2002/07/owl#	owl	assertionProperty	p,zoo
+http://www.w3.org/2002/07/owl#	owl	bottomDataProperty	p,zoo
+http://www.w3.org/2002/07/owl#	owl	topDataProperty	p,zoo
+http://www.w3.org/2002/07/owl#	owl	topObjectProperty	p,zoo
+http://www.w3.org/2002/07/owl#	owl	bottomObjectProperty	p,zoo
+http://www.w3.org/2002/07/owl#	owl	Nothing	c,zoo
+http://www.w3.org/2002/07/owl#	owl	Thing	c,zoo
+http://www.w3.org/2002/07/owl#	owl	IrreflexiveProperty	c,zoo
+http://www.w3.org/2002/07/owl#	owl	FunctionalProperty	c,zoo
+http://www.w3.org/2002/07/owl#	owl	DeprecatedClass	c,zoo
+http://www.w3.org/2002/07/owl#	owl	ObjectProperty	c,zoo
+http://www.w3.org/2002/07/owl#	owl	Axiom	c,zoo
+http://www.w3.org/2002/07/owl#	owl	NegativePropertyAssertion	c,zoo
+http://www.w3.org/2002/07/owl#	owl	Class	c,defer,TODO Defer to rdfs:Class. Will this cause problems? Investigate.
+http://www.w3.org/2002/07/owl#	owl	InverseFunctionalProperty	c,zoo
+http://www.w3.org/2002/07/owl#	owl	Annotation	c,zoo
+http://www.w3.org/2002/07/owl#	owl	DatatypeProperty	c,zoo
+http://www.w3.org/2002/07/owl#	owl	SymmetricProperty	c,zoo
+http://www.w3.org/2002/07/owl#	owl	Ontology	c,zoo
+http://www.w3.org/2002/07/owl#	owl	AllDisjointClasses	c,zoo
+http://www.w3.org/2002/07/owl#	owl	TransitiveProperty	c,zoo
+http://www.w3.org/2002/07/owl#	owl	Restriction	c,zoo
+http://www.w3.org/2002/07/owl#	owl	DeprecatedProperty	c,zoo
+http://www.w3.org/2002/07/owl#	owl	ReflexiveProperty	c,zoo
+http://www.w3.org/2002/07/owl#	owl	OntologyProperty	c,zoo
+http://www.w3.org/2002/07/owl#	owl	AllDifferent	c,zoo
+http://www.w3.org/2002/07/owl#	owl	AsymmetricProperty	c,zoo
+http://www.w3.org/2002/07/owl#	owl	NamedIndividual	c,zoo
+http://www.w3.org/2002/07/owl#	owl	AnnotationProperty	c,zoo
+http://www.w3.org/2002/07/owl#	owl	AllDisjointProperties	c,zoo
+http://www.w3.org/2002/07/owl#	owl	DataRange	c,zoo
+http://purl.org/ontology/po/	po	frequency	p,zoo
+http://purl.org/ontology/po/	po	long_synopsis	p,zoo
+http://purl.org/ontology/po/	po	schedule_date	p,zoo
+http://purl.org/ontology/po/	po	medium_synopsis	p,zoo
+http://purl.org/ontology/po/	po	aspect_ratio	p,zoo
+http://purl.org/ontology/po/	po	synopsis	p,zoo
+http://purl.org/ontology/po/	po	position	p,TODO Investigate clash
+http://purl.org/ontology/po/	po	text	p,TODO Investigate clash
+http://purl.org/ontology/po/	po	short_synopsis	p,zoo
+http://purl.org/ontology/po/	po	sound_format	p,zoo
+http://purl.org/ontology/po/	po	duration	p,TODO Investigate clash
+http://purl.org/ontology/po/	po	subtitle_language	p,zoo
+http://purl.org/ontology/po/	po	subject	p,defer,TODO defer to dcterms:subjecdt.
+http://purl.org/ontology/po/	po	location	p,TODO 
+http://purl.org/ontology/po/	po	author	p,zoo
+http://purl.org/ontology/po/	po	track	p,TODO investigate clash
+http://purl.org/ontology/po/	po	producer	TODO
+http://purl.org/ontology/po/	po	genre	p,investigate clash (mo:). Also theatre usage. Converge via SKOS?
+http://purl.org/ontology/po/	po	broadcast_on	p,zoo
+http://purl.org/ontology/po/	po	anchor	p,zoo
+http://purl.org/ontology/po/	po	format	p,todo,defer	Defer to DC.
+http://purl.org/ontology/po/	po	clip	p,zoo
+http://purl.org/ontology/po/	po	place	todo
+http://purl.org/ontology/po/	po	broadcaster	p,zoo
+http://purl.org/ontology/po/	po	parent_service	p,zoo
+http://purl.org/ontology/po/	po	director	p,defer,TODO Investigate.
+http://purl.org/ontology/po/	po	broadcast_of	p,zoo
+http://purl.org/ontology/po/	po	parent_series	p,zoo
+http://purl.org/ontology/po/	po	service	p,zoo
+http://purl.org/ontology/po/	po	person	p,zoo
+http://purl.org/ontology/po/	po	credit	p,zoo
+http://purl.org/ontology/po/	po	category	p,todo,defer	Investigate
+http://purl.org/ontology/po/	po	news_reader	p,zoo
+http://purl.org/ontology/po/	po	time	p,todo,defer	Investigate, see also time and events ontologies.
+http://purl.org/ontology/po/	po	commentator	p,zoo
+http://purl.org/ontology/po/	po	masterbrand	p,zoo
+http://purl.org/ontology/po/	po	performer	p,defer,TODO Defers to bibo, randomly.
+http://purl.org/ontology/po/	po	season_broadcast	p,zoo
+http://purl.org/ontology/po/	po	microsite	p,zoo
+http://purl.org/ontology/po/	po	version	p,TODO Clash amongst sioc,ical,mo,po vocabs.
+http://purl.org/ontology/po/	po	executive_producer	p,zoo
+http://purl.org/ontology/po/	po	actor	p,zoo
+http://purl.org/ontology/po/	po	channel	p,zoo	Note would also clash with rss1 (but we're not going there).
+http://purl.org/ontology/po/	po	participant	p,zoo
+http://purl.org/ontology/po/	po	series	p,zoo
+http://purl.org/ontology/po/	po	episode	p,zoo
+http://purl.org/ontology/po/	po	outlet	p,zoo
+http://purl.org/ontology/po/	po	SignedVersion	c,zoo
+http://purl.org/ontology/po/	po	Season	c,zoo
+http://purl.org/ontology/po/	po	Format	c,zoo
+http://purl.org/ontology/po/	po	TV	c,zoo
+http://purl.org/ontology/po/	po	Category	c,zoo
+http://purl.org/ontology/po/	po	NationalRadio	c,zoo
+http://purl.org/ontology/po/	po	Subtitle	c,zoo
+http://purl.org/ontology/po/	po	AudioDescribedVersion	c,zoo
+http://purl.org/ontology/po/	po	FM	c,zoo
+http://purl.org/ontology/po/	po	Brand	c,defer,TODO Clash with gr:, deferring to that as more general.
+http://purl.org/ontology/po/	po	Series	c,zoo
+http://purl.org/ontology/po/	po	Web	c,zoo
+http://purl.org/ontology/po/	po	OriginalVersion	c,zoo
+http://purl.org/ontology/po/	po	Broadcast	c,zoo
+http://purl.org/ontology/po/	po	ShortenedVersion	c,zoo
+http://purl.org/ontology/po/	po	Clip	c,zoo
+http://purl.org/ontology/po/	po	Genre	c,todo,defer	mo: and po: clash :( try skos? superclass somewhere?
+http://purl.org/ontology/po/	po	DVB	c,zoo
+http://purl.org/ontology/po/	po	LocalRadio	c,zoo
+http://purl.org/ontology/po/	po	Version	c,TODO Clash
+http://purl.org/ontology/po/	po	Outlet	c,zoo
+http://purl.org/ontology/po/	po	Episode	c,zoo
+http://purl.org/ontology/po/	po	Place	c,zoo
+http://purl.org/ontology/po/	po	Programme	c,zoo
+http://purl.org/ontology/po/	po	LW	c,zoo
+http://purl.org/ontology/po/	po	DAB	c,zoo
+http://purl.org/ontology/po/	po	Subject	c,zoo
+http://purl.org/ontology/po/	po	Channel	c,zoo
+http://purl.org/ontology/po/	po	Radio	c,zoo
+http://purl.org/ontology/po/	po	FirstBroadcast	c,zoo
+http://purl.org/ontology/po/	po	RepeatBroadcast	c,zoo
+http://purl.org/ontology/po/	po	RegionalRadio	c,zoo
+http://purl.org/ontology/po/	po	IPStream	c,zoo
+http://purl.org/ontology/po/	po	Service	c,zoo
+http://purl.org/ontology/po/	po	Segment	c,zoo
+http://purl.org/ontology/po/	po	Broadcaster	c,zoo
+http://purl.org/ontology/po/	po	ProgrammeItem	c,zoo
+http://purl.org/ontology/po/	po	Person	c,defer	foaf:Person
+http://www.w3.org/1999/02/22-rdf-syntax-ns#	rdf	type	p,zoo
+http://www.w3.org/1999/02/22-rdf-syntax-ns#	rdf	first	p,zoo
+http://www.w3.org/1999/02/22-rdf-syntax-ns#	rdf	rest	p,zoo
+http://www.w3.org/1999/02/22-rdf-syntax-ns#	rdf	predicate	p,defer	for symmetry with subject.
+http://www.w3.org/1999/02/22-rdf-syntax-ns#	rdf	object	p,defer	for symmetry with subject.
+http://www.w3.org/1999/02/22-rdf-syntax-ns#	rdf	subject	p,defer	dc:subject.
+http://www.w3.org/1999/02/22-rdf-syntax-ns#	rdf	value	p,zoo
+http://www.w3.org/1999/02/22-rdf-syntax-ns#	rdf	Statement	c,zoo
+http://www.w3.org/1999/02/22-rdf-syntax-ns#	rdf	Property	c,zoo
+http://www.w3.org/1999/02/22-rdf-syntax-ns#	rdf	Alt	c,zoo
+http://www.w3.org/1999/02/22-rdf-syntax-ns#	rdf	Seq	c,zoo
+http://www.w3.org/1999/02/22-rdf-syntax-ns#	rdf	Bag	c,zoo
+http://www.w3.org/1999/02/22-rdf-syntax-ns#	rdf	List	c,zoo
+http://www.w3.org/2000/01/rdf-schema#	rdfs	domain	p,zoo
+http://www.w3.org/2000/01/rdf-schema#	rdfs	label	p,zoo
+http://www.w3.org/2000/01/rdf-schema#	rdfs	comment	p,zoo
+http://www.w3.org/2000/01/rdf-schema#	rdfs	seeAlso	p,zoo
+http://www.w3.org/2000/01/rdf-schema#	rdfs	range	p,zoo
+http://www.w3.org/2000/01/rdf-schema#	rdfs	subClassOf	p,zoo
+http://www.w3.org/2000/01/rdf-schema#	rdfs	member	p,defer	foaf:member more generally useful in public Web.
+http://www.w3.org/2000/01/rdf-schema#	rdfs	isDefinedBy	p,zoo
+http://www.w3.org/2000/01/rdf-schema#	rdfs	subPropertyOf	p,zoo
+http://www.w3.org/2000/01/rdf-schema#	rdfs	Resource	c,zoo
+http://www.w3.org/2000/01/rdf-schema#	rdfs	Class	c,zoo
+http://www.w3.org/2000/01/rdf-schema#	rdfs	ContainerMembershipProperty	c,zoo
+http://www.w3.org/2000/01/rdf-schema#	rdfs	Literal	c,zoo
+http://www.w3.org/2000/01/rdf-schema#	rdfs	Datatype	c,zoo
+http://www.w3.org/2000/01/rdf-schema#	rdfs	Container	c,zoo
 http://purl.org/vocab/relationship/	rel	wouldLikeToKnow
 http://purl.org/vocab/relationship/	rel	participantIn
 http://purl.org/vocab/relationship/	rel	knowsOf
@@ -1299,3 +1299,4 @@ http://www.w3.org/2006/vcard/ns#	vcard	Label
 http://www.w3.org/2006/vcard/ns#	vcard	Voice
 http://www.w3.org/2006/vcard/ns#	vcard	Postal
 http://www.w3.org/2006/vcard/ns#	vcard	Msg
+	p,zoo
