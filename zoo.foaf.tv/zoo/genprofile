@@ -1,0 +1,35 @@
+#!/usr/bin/perl
+#
+# Script to fetch schemas that will be represented (in part) in the Zoo
+# Dan Brickley <danbri@danbri.org>
+
+
+# http://purl.org/ontology/bibo/  bibo    shortTitle      p,zoo
+
+
+open(IN,"zoo_manifest.txt") || die "No input data.";
+
+my %done = ();
+
+
+my %donevocab = ();
+
+while(<IN>) {
+  chomp;
+  if (m/^#/){next;}
+  my ($uri, $prefix, $term, $tags, $comment) = split(/\t/,$_);
+  # print "PREFIX: $prefix URI: $uri TAGS: $tags TERM: $term COMMENT: $comment\n";
+  if ($tags =~ m/zoo/ ) {
+   if ($done{$term}) { print "WARNING!: $term already done.\n"; } else { $done{$term}=1; }
+   if ($donevocab{$uri}) { ; } else { $donevocab{$uri}=1; print "\n<h3>$uri</h3>\n\n" }
+
+   my $cp = "";
+   if ($tags =~ m/p,/) { $cp = 'pr'; }
+   if ($tags =~ m/c,/) { $cp = 'cl'; }
+
+   my $def =  "<span typeof='rdfa:TermMapping'><span class='term $cp' property='rdfa:term' title='$uri$term'>$term </span></span>";
+
+   print $def . "\n";
+  }
+ }
+
