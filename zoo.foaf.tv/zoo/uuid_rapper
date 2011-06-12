@@ -1,0 +1,33 @@
+#!/usr/bin/perl
+
+use Data::UUID;
+use IPC::Open3;
+use strict;
+
+# A UUID wrapper for Redland's rapper RDF parser.
+# Dan Brickley <danbri@danbri.org>
+#
+# Expands genid bnode labels to be prefixed with a UUID, allowing output
+# From multiple runs of the parser to be concatenated together without e.g. :genid1 
+# from multiple files being merged together.
+#
+# find data/ -name \*.rdf -exec ./uuid_rapper {} \;  > _all.nt
+#
+# Bugs: it will trash any matches of the string '_:genid' within real URIs or literals.
+# (... also we have a problem when underscore is in bnodeID="a_1" ... rapper issue?)
+
+my  $ug    = new Data::UUID;
+my  $uuid1 = $ug->create();
+my $u = $ug->to_hexstring($uuid1);
+my($wtr, $rdr, $err);
+use Symbol 'gensym'; $err = gensym;
+my $file = shift || die "Pass a file path as sole argument.";
+my $pid = open3(\*CHLD_IN, \*CHLD_OUT, \*CHLD_ERR, 'rapper', $file );
+while (<CHLD_OUT>) {s/_:genid/'_:genid'.$u/ge; print; }
+
+waitpid( $pid, 0 ); # http://search.cpan.org/~jesse/perl-5.14.0/pod/perlfunc.pod#waitpid
+
+my $child_exit_status = $? >> 8;
+
+# ./uuid_rapper data/doap.rdf | grep genid | rapper -i ntriples - file:test:
+
