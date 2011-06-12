@@ -1,7 +1,7 @@
 // initially borrowed from bdarcus
 
 body { margin:  5em; position: center; width: 670px; font-family: sans; }
-body.profile { text-align: center; }
+body.profile { text-align: center; background: red;}
 h1 { font-size: 20px; margin:2em; }
 h2{ font-size: 14px; }
 
@@ -15,3 +15,5 @@ td { text-align: left; }
 td.term { text-align:right; }
 p { text-align: left; }
 
+.cl { text-weight: bold;  font-size: large; color: #090;}
+.pr { color: #0AA; }
