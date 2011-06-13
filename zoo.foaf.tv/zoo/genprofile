@@ -6,30 +6,58 @@
 
 # http://purl.org/ontology/bibo/  bibo    shortTitle      p,zoo
 
+my $tpl;
+my $tplfile = "index_template.html" ;
+open(TPL, $tplfile) || die "No template for index.html found. Use $tplfile with <!--MAIN--> marker for main insertion point.";
+while(<TPL>) {$tpl .= $_;}
+close TPL;
 
 open(IN,"zoo_manifest.txt") || die "No input data.";
-
 my %done = ();
-
-
 my %donevocab = ();
 
+#	<h3>http://purl.org/ontology/bibo/</h3>
+#	<h3>http://purl.org/vocab/bio/0.1/</h3>
+#	<h3>http://creativecommons.org/ns#</h3>
+#	<h3>http://commontag.org/ns#</h3>
+#	<h3>http://purl.org/dc/terms/</h3>
+#	<h3>http://usefulinc.com/ns/doap#</h3>
+#	<h3>http://purl.org/NET/c4dm/event.owl#</h3>
+#	<h3>http://xmlns.com/foaf/0.1/</h3>
+#	<h3>http://www.w3.org/2003/01/geo/wgs84_pos#</h3>
+#	<h3>http://www.geonames.org/ontology#</h3>
+#	<h3>http://purl.org/goodrelations/v1#</h3>
+#	<h3>http://www.w3.org/2002/12/cal/ical#</h3>
+#	<h3>http://purl.org/ontology/mo/</h3>
+#	<h3>http://www.w3.org/ns/org#</h3>
+#	<h3>http://www.w3.org/2002/07/owl#</h3>
+#	<h3>http://purl.org/ontology/po/</h3>
+#	<h3>http://www.w3.org/1999/02/22-rdf-syntax-ns#</h3>
+#	<h3>http://www.w3.org/2000/01/rdf-schema#</h3>
+
+my %zoospec = ( 
+	'foaf' => ( 'friend of a friend', 'http://xmlns.com/foaf/0.1/' ) ,
+	'dcterms' => ( 'dublin core terms', 'http://purl.org/dc/terms/')
+);
+
+my $main = '';
 while(<IN>) {
   chomp;
   if (m/^#/){next;}
   my ($uri, $prefix, $term, $tags, $comment) = split(/\t/,$_);
   # print "PREFIX: $prefix URI: $uri TAGS: $tags TERM: $term COMMENT: $comment\n";
   if ($tags =~ m/zoo/ ) {
-   if ($done{$term}) { print "WARNING!: $term already done.\n"; } else { $done{$term}=1; }
-   if ($donevocab{$uri}) { ; } else { $donevocab{$uri}=1; print "\n<h3>$uri</h3>\n\n" }
+    if ($done{$term}) { print "WARNING!: $term already done.\n"; } else { $done{$term}=1; }
+    if ($donevocab{$uri}) { ; } else { $donevocab{$uri}=1; $main .="\n<h3>$uri</h3>\n\n" }
 
-   my $cp = "";
-   if ($tags =~ m/p,/) { $cp = 'pr'; }
-   if ($tags =~ m/c,/) { $cp = 'cl'; }
+    my $cp = "";
+    if ($tags =~ m/p,/) { $cp = 'pr'; }
+    if ($tags =~ m/c,/) { $cp = 'cl'; }
 
-   my $def =  "<span typeof='rdfa:TermMapping'><span class='term $cp' property='rdfa:term' title='$uri$term'>$term </span></span>";
-
-   print $def . "\n";
+    my $def =  "<span typeof='rdfa:TermMapping'><span class='term $cp' property='rdfa:term' title='$uri$term'>$term</span> <span rel='rdfa:uri' href='$uri$term'/></span>\n";
+    $main .= $def;
   }
- }
+}
+$tpl =~ s/<!--MAIN-->/$main/e;
+print $tpl . "\n";
 
