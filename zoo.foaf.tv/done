@@ -1,0 +1,3 @@
+#!/bin/sh
+
+git commit -m "pushing an uncommented edit to site" index.html  ; git push origin master; ./zoo/upsite.sh 
